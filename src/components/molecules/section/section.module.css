@@ -1,0 +1,27 @@
+.section {
+  max-width: 64rem;
+  margin: 0 auto;
+  padding: 5rem 1.5rem;
+  scroll-margin-top: 6rem;
+}
+
+.sectionTitle {
+  margin-bottom: 2.5rem;
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+  font-weight: 700;
+}
+
+.gradientText {
+  background-image: var(--gradient-text);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+@media (min-width: 768px) {
+  .sectionTitle {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+}

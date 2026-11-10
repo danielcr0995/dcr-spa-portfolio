@@ -1,0 +1,46 @@
+.intro {
+  border-bottom: 1px solid var(--border);
+  background-image: var(--gradient-hero);
+}
+
+
+
+.introInner {
+  max-width: 64rem;
+  margin: 0 auto;
+  padding: 4rem 1.5rem;
+}
+
+.eyebrow {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: var(--primary);
+}
+
+.introTitle {
+  margin-top: 0.75rem;
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+  font-weight: 700;
+}
+
+.introText {
+  margin-top: 1rem;
+  max-width: 42rem;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  color: var(--muted-foreground);
+}
+
+@media (min-width: 768px) {
+  .introInner {
+    padding: 5rem 1.5rem;
+  }
+
+  .introTitle {
+    font-size: 3rem;
+    line-height: 1;
+  }
+}

@@ -1,0 +1,143 @@
+@use '@/styles/variables' as *;
+@use '@/styles/mixins' as *;
+@use "sass:color";
+
+.hero {
+  position: relative;
+  margin-top:-$nav-height;
+  left:0;
+  height:100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    // Ajuste de gradiente:
+    background: linear-gradient(
+            to bottom,
+            rgba(0, 0, 0, 0.8) 0%,    // Muy oscuro arriba (zona del navbar)
+            rgba(0, 0, 0, 0.3) 10%,   // Se aclara rápido después del navbar
+            transparent 20%,          // Centro limpio para ver la imagen
+            rgba(0, 0, 0, 0) 100%   // Un poco oscuro abajo para dar contraste
+    );
+    z-index: 1;
+    pointer-events: none;
+  }
+}
+
+.heroImage {
+  object-fit: cover;
+  z-index: 0;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba($color-volcanic, 0.3) 0%,
+    rgba($color-volcanic, 0.65) 100%
+  );
+  z-index: 1;
+}
+
+.content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  padding: 0 1rem;
+  max-width: 56rem;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.title {
+  font-size: clamp(2.5rem, 8vw, 4.5rem);
+  font-weight: 700;
+  color: $color-primary-foreground;
+  line-height: 1.1;
+}
+
+.titleAccent {
+  background: linear-gradient(135deg, $color-golden, $color-golden-bright);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.subtitle {
+  font-size: clamp(1rem, 2.5vw, 1.25rem);
+  color: rgba($color-primary-foreground, 0.8); // ✅ works because it's a real hex color
+  margin-top: 1.5rem;
+  max-width: 42rem;
+  margin-inline: auto;
+}
+
+.searchBar {
+  margin-top: 2.5rem;
+  background: rgba($color-primary-foreground, 0.97);
+  backdrop-filter: blur(8px);
+  border-radius: 12px;
+  padding: 0.75rem;
+  box-shadow: 0 10px 15px rgba($color-volcanic, 0.4);
+  max-width: 52rem;
+  margin-inline: auto;
+}
+
+.searchGrid {
+  display: grid;
+  grid-template-columns: 1fr; // mobile first
+  gap: 0.5rem;
+
+  @include mq(md) {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0.75rem;
+  }
+}
+
+.select {
+  background: rgba($color-volcanic, 0.05);
+  color: $color-volcanic;
+  border-radius: 8px;
+  padding: 0.75rem 1rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  width: 100%;
+
+  &:focus {
+    outline: 2px solid $color-accent;
+  }
+  
+}
+
+.searchButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  background: $color-accent;
+  color: $color-accent-foreground;
+  font-weight: 700;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background 0.2s ease, box-shadow 0.2s ease;
+
+  &:hover {
+    background: color.adjust($color-accent, $lightness: -8%);
+    box-shadow: 0 4px 12px rgba($color-accent, 0.4);
+  }
+}
