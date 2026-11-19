@@ -1,0 +1,62 @@
+.card {
+  border-radius: 1rem;
+  border: 1px solid var(--border);
+  background: var(--card);
+  padding: 1.5rem;
+}
+
+.period {
+  margin: 0 0 1rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  color: var(--primary);
+}
+
+.title {
+  margin: 0.5rem 0 0;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 700;
+}
+
+.location {
+  margin: 1rem 0 0;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  color: var(--muted-foreground);
+}
+
+.locationValue {
+  font-weight: 400;
+  color: var(--foreground);
+}
+
+.image {
+  display: block;
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  margin: 1rem auto;
+  border-radius: 0.5rem;
+}
+
+.abstract {
+  margin: 0 0 0.5rem;
+  text-align: justify;
+  hyphens: auto;
+}
+
+.actions {
+  display: flex;
+  justify-content: end;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: auto;
+  padding-top: 1rem;
+}
+
+@media (min-width: 768px) {
+  .card {
+    padding: 2.5rem;
+  }
+}

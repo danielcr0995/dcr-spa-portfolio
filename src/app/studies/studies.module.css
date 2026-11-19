@@ -31,6 +31,8 @@
 
 .body {
   padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
 }
 
 .period {
@@ -55,6 +57,7 @@
   font-size: 0.875rem;
   line-height: 1.25rem;
   color: var(--muted-foreground);
+  margin-bottom: 1rem;
 }
 
 @media (min-width: 768px) {

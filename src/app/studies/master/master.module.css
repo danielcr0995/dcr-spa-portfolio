@@ -1,0 +1,236 @@
+/* Layout */
+.container {
+  display: block;
+  max-width: 64rem;
+  margin: 0 auto;
+  padding: 4rem 1.5rem;
+}
+
+
+.grid2,
+.grid3 {
+  display: grid;
+  gap: 1.5rem;
+}
+
+/* Shared card look (hover lift comes from the global .card-lift class) */
+
+.figureCard,
+.courseCard,
+.projectCard {
+  border-radius: 1rem;
+  border: 1px solid var(--border);
+  background: var(--card);
+}
+
+.figureCard,
+.projectCard {
+  overflow: hidden;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  aspect-ratio: 3 / 2;
+  object-fit: cover;
+}
+
+
+.period {
+  margin: 0 0 1rem 0;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  color: var(--primary);
+}
+
+.schools {
+  margin: 1rem 0 0 0;
+  color: var(--foreground);
+  font-weight: 400;
+}
+
+.specialization {
+  margin: 1rem 0 0;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  color: var(--muted-foreground);
+}
+
+.specializationValue {
+  font-weight: 500;
+  color: var(--foreground);
+}
+
+/* Places */
+.figureCard {
+  margin: 0;
+}
+
+.figureCaption {
+  padding: 1.25rem;
+}
+
+.cardTitle {
+  margin: 0;
+  font-size: inherit;
+  font-weight: 700;
+}
+
+.city {
+  margin: 0;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  color: var(--primary);
+}
+
+.note {
+  margin: 0.5rem 0 0;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  color: var(--muted-foreground);
+}
+
+/* Courses */
+.courseCard {
+  padding: 1.5rem;
+}
+
+.courseYear {
+  margin: 0;
+  font-size: inherit;
+  font-weight: 700;
+  color: var(--primary);
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin: 1rem 0 0;
+  padding: 0;
+  list-style: none;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  color: var(--muted-foreground);
+}
+
+/* Projects */
+.projectBody {
+  padding: 1.5rem;
+}
+
+.projectCourse {
+  margin: 0;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  color: var(--primary);
+}
+
+.projectName {
+  margin: 0.25rem 0 0;
+  font-size: inherit;
+  font-weight: 700;
+}
+
+.projectDescription {
+  margin: 0.5rem 0 0;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  color: var(--muted-foreground);
+}
+
+.projectResult {
+  margin: 0.75rem 0 0;
+  font-family: var(--font-display);
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  color: var(--primary);
+}
+
+/* Techniques */
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.chip {
+  border-radius: 9999px;
+  background: var(--secondary);
+  padding: 0.25rem 0.75rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+/* Events */
+.eventsCard {
+  border-radius: 1rem;
+  border: 1px solid color-mix(in srgb, var(--primary) 40%, transparent);
+  background: var(--card);
+  padding: 1.5rem;
+}
+
+.eventsList {
+  display: grid;
+  gap: 0.5rem;
+  margin: 0.75rem 0 0;
+  padding: 0;
+  list-style: none;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  color: var(--muted-foreground);
+}
+
+.actions {
+  margin-top: auto;
+  padding-top: 1rem;
+  display: flex;
+  justify-content: end;
+  gap: 1rem;
+}
+
+.logosContainer{
+  display: flex;
+  flex-direction: column;
+  margin: 1rem auto;
+  align-items: center;
+
+}
+
+.logo{
+  background-color: var(--card-foreground);
+  padding: 1rem;
+  border-radius: 0.5rem;
+  margin: 0.5rem 0;
+  width: 50%;
+  height: 100px;
+  object-fit: contain;
+
+}
+
+/* Breakpoints: keep after the base rules so they win */
+@media (min-width: 768px) {
+  .grid2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .grid3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+
+  .eventsList {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .logosContainer{
+    flex-direction: row;
+    justify-content: space-between;
+    width: auto;
+    height: calc(100px + 1rem);
+  }
+
+  .logo{
+    width: 25%;
+  }
+}
