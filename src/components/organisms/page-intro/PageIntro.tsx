@@ -17,7 +17,7 @@ export function PageIntro({
         <h1 className={styles.introTitle}>
           <span className="text-gradient">{title}</span>
         </h1>
-        {children ? <p className={styles.introText}>{children}</p> : null}
+        {children ? <h3 className={styles.introText}>{children}</h3> : null}
       </div>
     </section>
   );

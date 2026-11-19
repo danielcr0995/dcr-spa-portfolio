@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import type { ReactNode } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import {
@@ -35,11 +34,11 @@ export default function HomePage() {
     <div>
       <section id="about" className={styles.hero}>
         <div className={styles.heroInner}>
+          <p className={styles.badge}>
+            <span className={styles.dot} /> {profile.availability}
+          </p>
           <div className={styles.heroInnerMain}>
             <div>
-              <p className={styles.badge}>
-                <span className={styles.dot} /> {profile.availability}
-              </p>
               <h1 className={styles.name}>
                 Hi, I&apos;m{" "}
                 <span className={styles.gradientText}>{profile.name}</span>
@@ -60,10 +59,11 @@ export default function HomePage() {
             </div>
             <Image
               src="/images/fotoperfil.png"
-              alt="Profiles photo"
+              alt="Profile photo"
               width={400}
-              height={400}
-              className={styles.heroInnerMainImage}
+              height={350}
+              priority
+              style={{ width: "40%", height: "auto" }}
             />
           </div>
 
@@ -211,7 +211,7 @@ export default function HomePage() {
           </a>
           <div className={styles.contactLinks}>
             {profile.links.map((l) => (
-              <a key={l.label} href={l.url}>
+              <a key={l.label} href={l.url} target="_blank">
                 {l.label}
               </a>
             ))}

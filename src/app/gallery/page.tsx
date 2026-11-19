@@ -8,7 +8,7 @@ import { GalleryView } from '@/components/organisms/gallery-view/GalleryView';
 const description = "A picture grid of the work I have done — filter by type.";
 
 export const metadata: Metadata = {
-  title: "Gallery",
+  title: `Gallery — ${profile.name}`,
   description,
   alternates: { canonical: "/gallery" },
   openGraph: {

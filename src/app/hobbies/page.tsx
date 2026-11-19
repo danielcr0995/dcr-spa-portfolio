@@ -7,7 +7,7 @@ import { PageIntro } from "@/components/organisms/page-intro/PageIntro";
 const description = "What I do outside work — the things that make me who I am.";
 
 export const metadata: Metadata = {
-  title: "Hobbies",
+  title: `Hobbies — ${profile.name}`,
   description,
   alternates: { canonical: "/hobbies" },
   openGraph: {
