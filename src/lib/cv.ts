@@ -98,11 +98,12 @@ export const education = [
   {
     degree: "Erasmus Mundus MSc in Nanoscience and Nanotechnology",
     school: "KU Leuven (Year 1) · Universitat de Barcelona (Year 2)",
-    period: "Sept 2024 — Aug 2026 (expected)",
+    period: "Sept 2024 — Aug 2026",
     detail:
       "Specialization in Nanomedicine and Nanotheranostics. Thesis at IQAC-CSIC: nanosystems based on peptide amphiphiles for drug encapsulation — four peptide amphiphiles synthesized by Fmoc-SPPS, >95% latanoprost encapsulation. Also AFM nanolithography and force spectroscopy, MOF CO₂ sensor data pipeline (R² = 0.996), and molecular dynamics.",
     image: "/images/kuleuven.jpeg",
     imageAlt: "Placeholder photo for the MSc — replace with a campus or thesis picture.",
+    url: "/studies/master"
   },
   {
     degree: "B.S. Physics",
@@ -112,6 +113,7 @@ export const education = [
       "Thesis: Basic Molecular Electronics via Mechanically Controlled Break Junction (MCBJ) — measured single-molecule conductance with sub-nm electrode gaps and correlated it with computed transmission spectra.",
     image: "/images/yachaytech.jpg",
     imageAlt: "Placeholder photo for the physics degree — replace with a real picture.",
+    url: "/studies/bachelor"
   },
 ];
 
