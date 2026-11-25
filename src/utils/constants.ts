@@ -1,0 +1,1 @@
+export const HOME_PROJECT_LIMIT = 10;
