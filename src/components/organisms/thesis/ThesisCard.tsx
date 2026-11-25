@@ -1,14 +1,12 @@
 import Image from "next/image";
 import Button from "@/components/atoms/button/Button";
 import styles from "./thesisCard.module.css";
+import {StudiesProgramme} from "@/lib/definitions";
 
 export type Thesis = {
-  title: string;
-  location: string;
-  abstract: string[];
+  programme: StudiesProgramme
   image: { src: string; alt: string };
   viewMoreUrl: string;
-  pdf: { url: string; name: string };
 };
 
 type ThesisCardProps = {
@@ -16,17 +14,17 @@ type ThesisCardProps = {
 };
 
 export function ThesisCard({ thesis }: Readonly<ThesisCardProps>) {
-  const { title, location, abstract = [], image, viewMoreUrl, pdf } = thesis;
+  const { programme,  image, viewMoreUrl} = thesis;
+  const { programmeType, thesisTitle, thesisLocation, thesisAbstract, thesisPdfUrl, thesisPdfName} = programme;
 
   return (
       <section>
         <div className={`${styles.card} card-lift`}>
-          <p className={styles.period}>Master Thesis</p>
-          <h2 className={styles.title}>{title}</h2>
+          <p className={styles.period}>{programmeType} Thesis</p>
+          <h2 className={styles.title}>{thesisTitle}</h2>
           <p className={styles.location}>
-            Place: <span className={styles.locationValue}>{location}</span>
+            Place: <span className={styles.locationValue}>{thesisLocation}</span>
           </p>
-
           <Image
               src={image.src}
               alt={image.alt}
@@ -35,7 +33,7 @@ export function ThesisCard({ thesis }: Readonly<ThesisCardProps>) {
               className={styles.image}
           />
 
-          {abstract.map((p, i) => (
+          {thesisAbstract.map((p, i) => (
               <p key={i} className={styles.abstract}>
                 {p}
               </p>
@@ -44,8 +42,8 @@ export function ThesisCard({ thesis }: Readonly<ThesisCardProps>) {
           <div className={styles.actions}>
             <Button href={viewMoreUrl} text="View more" variant="primary" isDownloadButton={false} />
             <Button
-                href={pdf.url}
-                pdfName={pdf.name}
+                href={thesisPdfUrl}
+                pdfName={thesisPdfName}
                 text="Download PDF"
                 variant="secondary"
                 isDownloadButton={true}

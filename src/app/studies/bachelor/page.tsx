@@ -7,13 +7,16 @@ import {
   bscEvents,
   bscPlaces,
   bscProgramme,
-  bscProjects,
   bscTechniques,
 } from "@/lib/studiesData";
 import {Section} from "@/components/molecules/section/Section";
 import type {Metadata} from "next";
 import {ThesisCard} from "@/components/organisms/thesis/ThesisCard";
 import {profile} from "@/lib/cv";
+import {slugify} from "@/utils/utils";
+import {ProjectCard} from "@/components/organisms/project-card/ProjectCard";
+import {projects} from "@/lib/projects";
+import {ProjectSummary} from "@/lib/definitions";
 
 
 const description =
@@ -33,6 +36,26 @@ export const metadata: Metadata = {
 };
 
 export default function BachelorPage() {
+  const bscProjects = projects.filter((p) => p.category.includes("Bachelor"));
+
+  const projectSummaries: ProjectSummary[] = bscProjects.map(
+      ({name, description, result, image, imageAlt, link, isExternalLink, slug, course, category, date}) => ({
+        name,
+        description,
+        result,
+        image,
+        imageAlt,
+        link,
+        isExternalLink,
+        slug,
+        course,
+        category,
+        date
+      }),
+  )
+  .slice()
+  .sort((a, b) => (b.date?.getTime() ?? 0) - (a.date?.getTime() ?? 0));
+
   return (
       <div>
         <PageIntro eyebrow="Bachelor studies" title={bscProgramme.title}>
@@ -75,18 +98,13 @@ export default function BachelorPage() {
         <div className={styles.container}>
           <ThesisCard
               thesis={{
-                title: bscProgramme.thesisTitle,
-                location: bscProgramme.thesisLocation,
-                abstract: bscProgramme.thesisAbstract ?? [],
+                programme: bscProgramme,
                 image: {
                   src: "/images/thesis_bachelor_benzene_perpendicular.png",
                   alt: "Bachelor thesis figure: benzene molecule in a perpendicular configuration",
                 },
-                viewMoreUrl: "/studies",
-                pdf: {
-                  url: bscProgramme.thesisPdfUrl,
-                  name: bscProgramme.thesisPdf,
-                },
+                viewMoreUrl: `/gallery/${bscProgramme.slug}`,
+
               }}
           />
 
@@ -130,23 +148,8 @@ export default function BachelorPage() {
 
           <Section title="Projects">
             <div className={styles.grid3}>
-              {bscProjects.map((p) => (
-                  <article key={p.name} className={`${styles.projectCard}`}>
-                    <Image
-                        src={p.image}
-                        alt={p.imageAlt}
-                        width={300}
-                        height={200}
-                        sizes="(min-width: 768px) 33vw, 100vw"
-                        className={styles.image}
-                    />
-                    <div className={styles.projectBody}>
-                      <p className={styles.projectCourse}>{p.course}</p>
-                      <h3 className={styles.projectName}>{p.name}</h3>
-                      <p className={styles.projectDescription}>{p.description}</p>
-                      <p className={styles.projectResult}>{p.result}</p>
-                    </div>
-                  </article>
+              {projectSummaries.map((p) => (
+                  <ProjectCard key={p.slug ? p.slug : slugify(p.name)} project={p} isSchoolPage={true}/>
               ))}
             </div>
           </Section>

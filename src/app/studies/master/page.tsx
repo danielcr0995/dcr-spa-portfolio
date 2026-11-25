@@ -4,7 +4,6 @@ import {
   mscProgramme,
   mscPlaces,
   mscCourses,
-  mscProjects,
   mscTechniques,
   mscEvents,
 } from "@/lib/studiesData";
@@ -14,6 +13,9 @@ import {PageIntro} from "@/components/organisms/page-intro/PageIntro";
 import {Section} from "@/components/molecules/section/Section";
 import Button from "@/components/atoms/button/Button";
 import {ThesisCard} from "@/components/organisms/thesis/ThesisCard";
+import {ProjectCard} from "@/components/organisms/project-card/ProjectCard";
+import {projects} from "@/lib/projects";
+import {ProjectSummary} from "@/lib/definitions";
 
 const description =
     "Courses, projects and techniques from the Erasmus Mundus MSc in Nanoscience and Nanotechnology (KU Leuven · Universitat de Barcelona).";
@@ -32,6 +34,26 @@ export const metadata: Metadata = {
 };
 
 export default function MasterPage() {
+  const mscProjects = projects.filter((p) => p.category.includes("Master"));
+
+  const projectSummaries: ProjectSummary[] = mscProjects.map(
+      ({name, description, result, image, imageAlt, link, isExternalLink, slug, course, category, date}) => ({
+        name,
+        description,
+        result,
+        image,
+        imageAlt,
+        link,
+        isExternalLink,
+        slug,
+        course,
+        category,
+        date
+      }),
+  )
+  .slice()
+  .sort((a, b) => (b.date?.getTime() ?? 0) - (a.date?.getTime() ?? 0));
+
   return (
       <div>
         <PageIntro eyebrow="Master studies" title={mscProgramme.title}>
@@ -83,15 +105,12 @@ export default function MasterPage() {
         <div className={styles.container}>
           <ThesisCard
               thesis={{
-                title: mscProgramme.thesisTitle,
-                location: mscProgramme.thesisLocation,
-                abstract: mscProgramme.thesisAbstract,
+                programme: mscProgramme,
                 image: {
                   src: "/images/pa_glaucoma_therapy_infographic.png",
                   alt: "Infographic of the peptide amphiphile glaucoma therapy",
                 },
-                viewMoreUrl: "/studies/",
-                pdf: { url: mscProgramme.thesisPdfUrl, name: mscProgramme.thesisPdf },
+                viewMoreUrl: `/gallery/${mscProgramme.slug}`
               }}
           />
 
@@ -135,23 +154,8 @@ export default function MasterPage() {
 
           <Section title="Projects">
             <div className={styles.grid3}>
-              {mscProjects.map((p) => (
-                  <article key={p.name} className={`${styles.projectCard}`}>
-                    <Image
-                        src={p.image}
-                        alt={p.imageAlt}
-                        width={300}
-                        height={200}
-                        sizes="(min-width: 768px) 33vw, 100vw"
-                        className={styles.image}
-                    />
-                    <div className={styles.projectBody}>
-                      <p className={styles.projectCourse}>{p.course}</p>
-                      <h3 className={styles.projectName}>{p.name}</h3>
-                      <p className={styles.projectDescription}>{p.description}</p>
-                      <p className={styles.projectResult}>{p.result}</p>
-                    </div>
-                  </article>
+              {projectSummaries.map((p) => (
+                  <ProjectCard key={p.slug ? p.slug : slugify(p.name)} project={p}  isSchoolPage = {true}/>
               ))}
             </div>
           </Section>

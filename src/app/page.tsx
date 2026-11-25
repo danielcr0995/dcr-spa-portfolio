@@ -5,7 +5,6 @@ import {
   profile,
   experience,
   education,
-  projects,
   skills,
   hobbies,
   extras,
@@ -13,6 +12,11 @@ import {
 import styles from "./styles.module.css";
 import { Section } from "@/components/molecules/section/Section";
 import { SeeMore } from "@/components/molecules/see-more/SeeMore";
+import {HOME_PROJECT_LIMIT} from "@/utils/constants";
+import {ProjectCard} from "@/components/organisms/project-card/ProjectCard";
+import {slugify} from "@/utils/utils";
+import {projects} from "@/lib/projects";
+import { ProjectSummary} from "@/lib/definitions";
 
 const title = `${profile.name} — ${profile.role}`;
 
@@ -30,6 +34,28 @@ export const metadata: Metadata = {
 };
 
 export default function HomePage() {
+
+
+
+  const projectSummaries: ProjectSummary[] = projects.map(
+      ({name, description, result, image, imageAlt, link, isExternalLink, slug, course, category, date}) => ({
+        name,
+        description,
+        result,
+        image,
+        imageAlt,
+        link,
+        isExternalLink,
+        slug,
+        course,
+        category,
+        date
+      }),
+  )
+  .slice()
+  .sort((a, b) => (b.date?.getTime() ?? 0) - (a.date?.getTime() ?? 0));
+
+
   return (
     <div>
       <section id="about" className={styles.hero}>
@@ -127,22 +153,19 @@ export default function HomePage() {
 
       <Section title="Selected work">
         <div className={styles.grid3}>
-          {projects.map((p) => (
-            <Link key={p.name} href="/gallery" className={styles.card}>
-              <Image
-                src={p.image}
-                alt={p.imageAlt}
-                width={1200}
-                height={800}
-                className={styles.projectImage}
-              />
-              <div className={styles.cardBody}>
-                <h3 className={styles.cardTitle}>{p.name}</h3>
-                <p className={styles.cardText}>{p.description}</p>
-                <p className={styles.cardResult}>{p.result}</p>
-              </div>
-            </Link>
+          {projectSummaries.slice(0, HOME_PROJECT_LIMIT).map((p) => (
+            // <Link key={p.slug} href="/gallery" >
+              <ProjectCard key={p.slug ? p.slug : slugify(p.name)} project={p} />
+            // </Link>
+
           ))}
+          <Link  href="/gallery" className={styles.card}>
+            <div className={`${styles.cardBodyMore} ${styles.cardBody} `}>
+              <h3 className={`${styles.cardTitle}`}>View More <span aria-hidden>→</span></h3>
+              {/*<p className={styles.cardText}>More...</p>*/}
+              {/*<p className={styles.cardResult}>More...</p>*/}
+            </div>
+          </Link>
         </div>
         <SeeMore href="/gallery" label="Open the full gallery" />
       </Section>
