@@ -8,7 +8,7 @@ type ProjectCardProps = {
   isSchoolPage: boolean,
 };
 
-export function ProjectCard({project, isSchoolPage}: Readonly<ProjectCardProps>) {
+export function ProjectCard({project, isSchoolPage=false}: Readonly<ProjectCardProps>) {
   const {name, description, result, image, imageAlt, link, isExternalLink, slug, course, category} = project;
 
   return (

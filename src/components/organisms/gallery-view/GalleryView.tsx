@@ -7,7 +7,7 @@ import {slugify} from "@/utils/utils";
 import {projects} from "@/lib/projects";
 import {PROJECT_CATEGORIES, ProjectCategory} from "@/lib/definitions";
 
-const filters = ["All", ...Array.from(PROJECT_CATEGORIES)];
+const filters = ["All", ...Array.from(PROJECT_CATEGORIES)]as const;
 
 export function GalleryView() {
   const [active, setActive] = useState<"All" | ProjectCategory>("All");

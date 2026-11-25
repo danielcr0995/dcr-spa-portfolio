@@ -16,6 +16,7 @@ import {ThesisCard} from "@/components/organisms/thesis/ThesisCard";
 import {ProjectCard} from "@/components/organisms/project-card/ProjectCard";
 import {projects} from "@/lib/projects";
 import {ProjectSummary} from "@/lib/definitions";
+import {slugify} from "@/utils/utils";
 
 const description =
     "Courses, projects and techniques from the Erasmus Mundus MSc in Nanoscience and Nanotechnology (KU Leuven · Universitat de Barcelona).";

@@ -155,7 +155,7 @@ export default function HomePage() {
         <div className={styles.grid3}>
           {projectSummaries.slice(0, HOME_PROJECT_LIMIT).map((p) => (
             // <Link key={p.slug} href="/gallery" >
-              <ProjectCard key={p.slug ? p.slug : slugify(p.name)} project={p} />
+              <ProjectCard key={p.slug ? p.slug : slugify(p.name)} project={p}  isSchoolPage={false}/>
             // </Link>
 
           ))}

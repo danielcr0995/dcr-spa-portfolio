@@ -66,7 +66,7 @@ export function ProjectDetail({project}: Readonly<ProjectDetailProps>) {
           {/* Meta line */}
           {(date || institution) && (
               <p className={styles.meta}>
-                {[institution, formatMonthYear(date)].filter(Boolean).join(" · ")}
+                {[institution, date && formatMonthYear(date)].filter(Boolean).join(" · ")}
               </p>
           )}
 
