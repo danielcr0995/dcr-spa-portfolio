@@ -1,42 +1,8 @@
-// ---- Types ----
-export interface StudiesProgramme {
-  title: string;
-  schools: string;
-  period: string;
-  specialization: string;
-  intro: string;
-  thesisTitle: string;
-  thesisLocation: string;
-  thesisPdf: string;
-  thesisPdfUrl: string;
-  thesisAbstract: string[];
-  officialWebsite: string;
-}
+import {StudiesCourse, StudiesPlace, StudiesProgramme, StudiesProject} from "@/lib/definitions";
 
-export interface StudiesPlace {
-  name: string;
-  city: string;
-  note: string;
-  image: string;
-  imageAlt: string;
-}
-
-export interface StudiesCourse {
-  year: string;
-  items: string[];
-}
-
-export interface StudiesProject {
-  name: string;
-  course: string;
-  description: string;
-  result: string;
-  image: string;
-  imageAlt: string;
-}
-
-// ---- Master studies page ----
 export const mscProgramme: StudiesProgramme = {
+  slug: "peptide-amphiphile-nanocarriers",
+  programmeType: "Master",
   title: "Erasmus Mundus MSc in Nanoscience and Nanotechnology",
   officialWebsite: "https://www.emm-nano.org/",
   schools: "KU Leuven (Year 1) · Universitat de Barcelona (Year 2)",
@@ -46,8 +12,8 @@ export const mscProgramme: StudiesProgramme = {
       "A two-year joint master across two universities: a broad nanoscience foundation in Leuven, then a nanomedicine  and characterization specialization in Barcelona, ending with a research thesis at IQAC-CSIC.",
   thesisTitle: "Peptide amphiphile nanocarriers for ocular drug delivery",
   thesisLocation: "IQAC-CSIC, Barcelona",
-  thesisPdfUrl: "/cv/thesisMaster.pdf",
-  thesisPdf: "nanosystems_based_on_peptide_amphiphiles_daniel_correa.pdf",
+  thesisPdfUrl: "/pdf/thesisMaster.pdf",
+  thesisPdfName: "nanosystems_based_on_peptide_amphiphiles_daniel_correa.pdf",
   thesisAbstract: [
       "Glaucoma is one of the leading causes of irreversible blindness worldwide. The development of more effective ocular drug delivery systems could improve therapeutic outcomes and patient compliance. This work investigates the potential neural cell adhesion molecule (NCAM) derived peptide amphiphiles (PAs) as nanostructured carriers for glaucoma treatment.",
     "Four PAs with NCAM as the backbone were synthesized using Fmoc-based solid phase peptide synthesis (SPPS). The synthesized compounds were characterized by ultra-high-pressure liquid chromatography (UHPLC), electrospray ionization mass spectrometry (ESI-MS) and high-performance liquid chromatography (HPLC) to confirm their successful synthesis and purity. Circular dichroism (CD) and fluorescence spectroscopy were employed to investigate the secondary structure and self-assembly behaviour of the PAs. Finally, the encapsulation efficiency of latanoprost was assessed. The results confirmed the successful synthesis of all PAs. CD analysis revealed the predominance of β-sheet secondary structures. Fluorescence studies showed that increasing the number of hydrophobic alkyl groups affected the critical aggregation concentration, particularly when increasing from one to two alkyl groups. Encapsulation efficiency studies exceeded 95% efficiency for three of the studied formulations. These results demonstrate that NCAM-derived PAs are promising candidates for the development of nanostructured ocular drug delivery systems. Their self-assembly properties and high drug-loading capabilities provide a basis for further studies focused on drug release, biocompatibility, and therapeutic efficacy in glaucoma treatment."]
@@ -118,44 +84,7 @@ export const mscCourses: StudiesCourse[] = [
   },
 ];
 
-export const mscProjects: StudiesProject[] = [
-  {
-    name: "Peptide amphiphile nanocarriers for ocular drug delivery",
-    course: "Master thesis — IQAC-CSIC, Barcelona",
-    description:
-        "Designed and synthesized four peptide amphiphiles by Fmoc solid-phase peptide synthesis, self-assembled them into nanosystems and tested them as carriers for latanoprost.",
-    result: ">95% drug encapsulation efficiency",
-    image: "/images/gallery-1.jpg",
-    imageAlt: "Placeholder picture of the thesis project — replace with a lab photo.",
-  },
-  {
-    name: "AFM nanomechanics & nanolithography",
-    course: "Nanoscience lab course",
-    description:
-        "Extracted Young's moduli from force curves on silicon and PDMS, and patterned gelatin surfaces at ~30 nm resolution by AFM nanolithography.",
-    result: "<1% error vs. literature values",
-    image: "/images/gallery-2.jpg",
-    imageAlt: "Placeholder picture of AFM work — replace with an AFM image.",
-  },
-  {
-    name: "MOF-based CO₂ sensor data pipeline",
-    course: "Sensors project",
-    description:
-        "Built a Python pipeline to process and fit sensor response data from a metal-organic framework CO₂ sensor.",
-    result: "Fit quality R² = 0.996",
-    image: "/images/gallery-3.jpg",
-    imageAlt: "Placeholder picture of the sensor project — replace with a real figure.",
-  },
-  {
-    name: "Molecular dynamics of nanosystems",
-    course: "Molecular modelling",
-    description:
-        "Ran and analysed molecular dynamics simulations (AMBER/VMD) to study the behaviour of self-assembling nanosystems.",
-    result: "Simulation analysis in AMBER/VMD",
-    image: "/images/gallery-1.jpg",
-    imageAlt: "Placeholder picture of the simulation project — replace with a snapshot.",
-  },
-];
+
 
 export const mscTechniques: string[] = [
   "Fmoc-SPPS peptide synthesis",
@@ -174,6 +103,8 @@ export const mscEvents: string[] = [
 ];
 
 export const bscProgramme: StudiesProgramme = {
+  slug: "molecular-electronics-break-junction-measurements",
+  programmeType: "Bachelor",
   title: "Bsc Physics",
   officialWebsite: "https://yachaytech.edu.ec/carrera-de-fisica/",
   schools: "Yachay Tech University",
@@ -184,8 +115,8 @@ export const bscProgramme: StudiesProgramme = {
   thesisTitle: "Basic Molecular electronics through Break Junction\n" +
       "measurements",
   thesisLocation: "Molecular electronics lab, Yachay Tech University ",
-  thesisPdfUrl: "/cv/thesisBachelor.pdf",
-  thesisPdf: "basic_molecular_electronics_through_break_junction_measurements.pdf",
+  thesisPdfUrl: "/pdf/thesisBachelor.pdf",
+  thesisPdfName: "basic_molecular_electronics_through_break_junction_measurements.pdf",
   thesisAbstract: ["Molecular electronics (ME) is an emerging technology that studies the electronic and thermal transport properties of individual molecules for the development of new devices with a very reduced size. Every metallic material and molecule has its own conductance value, so it is important to understand the conductance of a specific molecule. In this work we performed the molecular quantum conductance measurements of a benzene molecule, using a Mechanically Controlled Break Junction (MCBJ). To perform the conductance quantization of a benzene molecule it is needed to first perform the calibration of the equipment, make the conductance measurements of clean gold junction and then place a drop of a benzene solution in the junction. Then around ∼2000 traces are collected to build the conductance histogram to observe the quantum characteristic conductance peak of a benzene molecule. By analyzing the histograms obtained from this experiment it is observed that the benzene molecule has the characteristic of shifting the gold peak to the right and has its first conductance peak located at −0.30 Log(G0). From this results it can be concluded that the MCBJ equipment has the enough resolution to detect the presence of a benzene molecule and measure its conductance."]
 };
 
@@ -193,7 +124,7 @@ export const bscPlaces: StudiesPlace[] = [
   {
     name: "Yachay Tech University",
     city: "Urcuqui, Ecuador",
-    note: "Year 1 — the nanoscience foundation year.",
+    note: "",
     image: "/images/yachaytech.jpg",
     imageAlt:
         "Illustrative placeholder photo of the Yachay Tech university.",

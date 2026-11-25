@@ -37,6 +37,7 @@ export const PROJECT_CATEGORIES = [
   "Research",
   "Master",
   "Bachelor",
+  "Thesis",
   // "Work",
   "Software",
   "Web",
@@ -66,6 +67,7 @@ export interface Project {
   image: string;
   imageAlt: string;
   images?: ProjectImage[];
+  highlights?: string[];
   details?: string[];
   paragraphs?: string[];
   tools?: string[];

@@ -25,17 +25,17 @@ const links: LinkProps[] = [
   {id: 4, title: "Hobbies", url: "/hobbies"},
 ];
 export default function Navbar() {
-  const [scrolled, setScrolled] = useState(false);
-  const [mobileOpen, setMobileOpen] = useState(false);
+  // const [scrolled, setScrolled] = useState(false);
+  // const [mobileOpen, setMobileOpen] = useState(false);
   const pathname = usePathname();
 
 
   // Shrink / blur on scroll
-  useEffect(() => {
-    const onScroll = () => setScrolled(window.scrollY > 50);
-    window.addEventListener("scroll", onScroll, {passive: true});
-    return () => window.removeEventListener("scroll", onScroll);
-  }, []);
+  // useEffect(() => {
+  //   const onScroll = () => setScrolled(window.scrollY > 50);
+  //   window.addEventListener("scroll", onScroll, {passive: true});
+  //   return () => window.removeEventListener("scroll", onScroll);
+  // }, []);
 
 
   return (

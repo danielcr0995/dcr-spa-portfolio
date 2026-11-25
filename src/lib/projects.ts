@@ -2,26 +2,32 @@ import {Project} from "@/lib/definitions";
 
 
 export const projects: Project[] = [
-  {
-    slug: "peptide-amphiphile-nanocarriers",
-    name: "Peptide amphiphile nanocarriers for ocular drug delivery",
-    course: "Master thesis — IQAC-CSIC, Barcelona",
-    context: "Nanoscience lab course — MSc",
-    description: "MSc thesis at IQAC-CSIC: self-assembling peptides for ocular drug delivery.",
-    result: "Result: >95% encapsulation efficiency",
-    isExternalLink: false,
-    link: "#",
-    category: ["Research", "Master"],
-    tag: ["School", "Master", "Thesis"],
-    image: "/images/cover_peptide_amphiphile_nanocarriers.png",
-    imageAlt: "Scientific illustration of peptide amphiphile nanocarriers for ocular drug delivery, with a micelle structure and eye cross-section",
-    details: [
-      "Designed and synthesized four peptide amphiphiles by Fmoc solid-phase peptide synthesis (SPPS)",
-      "Self-assembled the amphiphiles into nanosystems and characterized them by HPLC/UHPLC-MS, ESI-MS and Raman spectroscopy",
-      "Tested the nanosystems as carriers for latanoprost, achieving >95% drug encapsulation efficiency",
-      "Aimed at ocular drug delivery as part of the Nanomedicine and Nanotheranostics specialization",
-    ],
-  },
+  // {
+  //   slug: "peptide-amphiphile-nanocarriers",
+  //   name: "Peptide amphiphile nanocarriers for ocular drug delivery",
+  //   course: "Master thesis — IQAC-CSIC, Barcelona",
+  //   context: "Nanoscience lab course — MSc",
+  //   description: "MSc thesis at IQAC-CSIC: self-assembling peptides for ocular drug delivery.",
+  //   result: "Result: >95% encapsulation efficiency",
+  //   isExternalLink: false,
+  //   link: "#",
+  //   category: ["Research", "Master"],
+  //   tag: ["School", "Master", "Thesis"],
+  //   image: "/images/cover_peptide_amphiphile_nanocarriers.png",
+  //   imageAlt: "Scientific illustration of peptide amphiphile nanocarriers for ocular drug delivery, with a micelle structure and eye cross-section",
+  //   highlights: [
+  //     "Synthesized four peptide amphiphiles by Fmoc solid-phase peptide synthesis",
+  //     "Confirmed their structure by HPLC/UHPLC-MS, ESI-MS and Raman spectroscopy",
+  //     "Self-assembled them into nanosystems that carried latanoprost",
+  //     "Reached >95% drug encapsulation efficiency for ocular delivery",
+  //   ],
+  //   details: [
+  //     "Designed and synthesized four peptide amphiphiles by Fmoc solid-phase peptide synthesis (SPPS)",
+  //     "Self-assembled the amphiphiles into nanosystems and characterized them by HPLC/UHPLC-MS, ESI-MS and Raman spectroscopy",
+  //     "Tested the nanosystems as carriers for latanoprost, achieving >95% drug encapsulation efficiency",
+  //     "Aimed at ocular drug delivery as part of the Nanomedicine and Nanotheranostics specialization",
+  //   ],
+  // },
   {
     slug: "reactive-account-microservices",
     name: "Reactive account microservices",
@@ -50,72 +56,78 @@ export const projects: Project[] = [
     imageAlt: "Placeholder picture of Pura Fruta — replace with a screenshot.",
     date: new Date(2022, 5, 15)
   },
-  {
-    slug: "afm-nanomechanics-nanolithography",
-    name: "AFM nanomechanics & nanolithography",
-    course: "Nanoscience lab course",
-    context: "Nanoscience lab course",
-    description:
-        "Extracted Young's moduli from force curves on silicon and PDMS, and patterned gelatin surfaces at ~30 nm resolution by AFM nanolithography.",
-    result: "<1% error vs. literature values",
-    isExternalLink: false,
-    link: "#",
-    category: ["Research", "Master"],
-    tag: ["School", "Master"],
-    image: "/images/cover_afm_nanomechanics_nanolithography.png",
-    imageAlt: "Scientific illustration of an atomic force microscope tip characterizing silicon and PDMS surfaces and patterning gelatin at the nanoscale.",
-  },
-  {
-    slug: "mof-co2-sensor-data-pipeline",
-    name: "MOF-based CO₂ sensor data pipeline",
-    course: "Sensors project",
-    context: "Sensors project",
-    description:
-        "Built a Python pipeline to process and fit sensor response data from a metal-organic framework CO₂ sensor.",
-    result: "Fit quality R² = 0.996",
-    isExternalLink: false,
-    link: "#",
-    category: ["Research", "Master"],
-    tag: ["School", "Master"],
-    image: "/images/cover_mof_co2_sensor_data_pipeline.png",
-    imageAlt: "Scientific visualization of a MOF-based CO₂ sensor in a controlled gas chamber, connected to a computer displaying sensor response curves and fitted data.",
-  },
-  {
-    slug: "molecular-dynamics-of-nanosystems",
-    name: "Molecular dynamics of nanosystems",
-    course: "Molecular modelling",
-    context: "Molecular modelling",
-    description:
-        "Ran and analysed molecular dynamics simulations (AMBER/VMD) to study the behaviour of self-assembling nanosystems.",
-    result: "Simulation analysis in AMBER/VMD",
-    isExternalLink: false,
-    link: "#",
-    category: ["Research", "Master"],
-    tag: ["School", "Master"],
-    image: "/images/cover_molecular_dynamics_nanosystems.png",
-    imageAlt: "Scientific 3D visualization of a self-assembling peptide amphiphile nanosystem in a molecular dynamics simulation environment.",
-  },
-  {
-    slug: "basic-molecular-electronics-mcbj",
-    name: "Basic molecular electronics through break junction measurements",
-    course: "Bachelor thesis — Yachay Tech University",
-    context: "Molecular electronics lab, Yachay Tech University",
-    description:
-        "Measured the single-molecule conductance of benzene with a Mechanically Controlled Break Junction (MCBJ).",
-    result: "Result: first conductance peak at −0.30 Log(G₀)",
-    isExternalLink: false,
-    link: "#",
-    category: ["Research", "Bachelor"],
-    tag: ["School", "Bachelor", "Thesis"],
-    image: "/images/thesis_bachelor_benzene_perpendicular.png",
-    imageAlt: "Benzene molecule in a perpendicular configuration between gold electrodes",
-    details: [
-      "Calibrated the MCBJ equipment and measured the conductance of a clean gold junction",
-      "Placed a drop of benzene solution in the junction and collected around 2000 conductance traces",
-      "Built conductance histograms and identified the shift of the gold peak caused by benzene",
-      "Concluded that the MCBJ setup has enough resolution to detect and measure a benzene molecule",
-    ],
-  },
+  // {
+  //   slug: "afm-nanomechanics-nanolithography",
+  //   name: "AFM nanomechanics & nanolithography",
+  //   course: "Nanoscience lab course",
+  //   context: "Nanoscience lab course",
+  //   description:
+  //       "Extracted Young's moduli from force curves on silicon and PDMS, and patterned gelatin surfaces at ~30 nm resolution by AFM nanolithography.",
+  //   result: "<1% error vs. literature values",
+  //   isExternalLink: false,
+  //   link: "#",
+  //   category: ["Research", "Master"],
+  //   tag: ["School", "Master"],
+  //   image: "/images/cover_afm_nanomechanics_nanolithography.png",
+  //   imageAlt: "Scientific illustration of an atomic force microscope tip characterizing silicon and PDMS surfaces and patterning gelatin at the nanoscale.",
+  // },
+  // {
+  //   slug: "mof-co2-sensor-data-pipeline",
+  //   name: "MOF-based CO₂ sensor data pipeline",
+  //   course: "Sensors project",
+  //   context: "Sensors project",
+  //   description:
+  //       "Built a Python pipeline to process and fit sensor response data from a metal-organic framework CO₂ sensor.",
+  //   result: "Fit quality R² = 0.996",
+  //   isExternalLink: false,
+  //   link: "#",
+  //   category: ["Research", "Master"],
+  //   tag: ["School", "Master"],
+  //   image: "/images/cover_mof_co2_sensor_data_pipeline.png",
+  //   imageAlt: "Scientific visualization of a MOF-based CO₂ sensor in a controlled gas chamber, connected to a computer displaying sensor response curves and fitted data.",
+  // },
+  // {
+  //   slug: "molecular-dynamics-of-nanosystems",
+  //   name: "Molecular dynamics of nanosystems",
+  //   course: "Molecular modelling",
+  //   context: "Molecular modelling",
+  //   description:
+  //       "Ran and analysed molecular dynamics simulations (AMBER/VMD) to study the behaviour of self-assembling nanosystems.",
+  //   result: "Simulation analysis in AMBER/VMD",
+  //   isExternalLink: false,
+  //   link: "#",
+  //   category: ["Research", "Master"],
+  //   tag: ["School", "Master"],
+  //   image: "/images/cover_molecular_dynamics_nanosystems.png",
+  //   imageAlt: "Scientific 3D visualization of a self-assembling peptide amphiphile nanosystem in a molecular dynamics simulation environment.",
+  // },
+  // {
+  //   slug: "basic-molecular-electronics-mcbj",
+  //   name: "Basic molecular electronics through break junction measurements",
+  //   course: "Bachelor thesis — Yachay Tech University",
+  //   context: "Molecular electronics lab, Yachay Tech University",
+  //   description:
+  //       "Measured the single-molecule conductance of benzene with a Mechanically Controlled Break Junction (MCBJ).",
+  //   result: "Result: first conductance peak at −0.30 Log(G₀)",
+  //   isExternalLink: false,
+  //   link: "#",
+  //   category: ["Research", "Bachelor"],
+  //   tag: ["School", "Bachelor", "Thesis"],
+  //   image: "/images/thesis_bachelor_benzene_perpendicular.png",
+  //   imageAlt: "Benzene molecule in a perpendicular configuration between gold electrodes",
+  //   highlights: [
+  //     "Calibrated the MCBJ equipment and measured a clean gold junction",
+  //     "Collected around 2,000 conductance traces with benzene in the junction",
+  //     "Identified the shift of the gold conductance peak caused by benzene",
+  //     "Showed the MCBJ setup resolves a single benzene molecule",
+  //   ],
+  //   details: [
+  //     "Calibrated the MCBJ equipment and measured the conductance of a clean gold junction",
+  //     "Placed a drop of benzene solution in the junction and collected around 2000 conductance traces",
+  //     "Built conductance histograms and identified the shift of the gold peak caused by benzene",
+  //     "Concluded that the MCBJ setup has enough resolution to detect and measure a benzene molecule",
+  //   ],
+  // },
   {
     slug: "haku-travel",
     name: "Haku travel",
@@ -394,6 +406,12 @@ export const projects: Project[] = [
     ],
     category: ["Research", "Master"],
     slug: "gas-sensor-characterization",
+    highlights: [
+      "Measured the electrical response of IF142 across 2.56–91.54% relative humidity",
+      "Detected CO₂ pulses from 200 to 1200 ppm under dry conditions",
+      "Found no clear sensing response at higher humidity",
+      "Established a linear relationship between humidity and resistance",
+    ],
     details: [
       "Characterization of IF142 metal-organic framework (MOF).",
       "Current-voltage measurements at relative humidity levels ranging from 2.56% to 91.54%.",
@@ -519,6 +537,12 @@ export const projects: Project[] = [
     ],
     category: ["Research", "Master"],
     slug: "molecular-dynamics-chignolin",
+    highlights: [
+      "Ran a 20 ns AMBER simulation of the chignolin peptide in water",
+      "Clustered trajectories into six structural states using RMSD analysis",
+      "Showed the peptide moving from extended to folded conformations",
+      "Cluster 1 was the dominant state, at 39.6% of trajectories",
+    ],
     details: [
       "Molecular dynamics simulation of a 10-amino-acid chignolin peptide in aqueous solution.",
       "System preparation and topology generation using AMBER LEaP.",
@@ -809,6 +833,12 @@ export const projects: Project[] = [
     ],
     category: ["Research", "Master"],
     slug: "afm-force-spectroscopy",
+    highlights: [
+      "Acquired force–distance curves on silicon and PDMS in spectroscopy mode",
+      "Converted cantilever deflection to force using the spring constant and sensitivity factor",
+      "Distinguished rigid silicon from compliant PDMS by contact transition and slope",
+      "Observed adhesive pull-off in PDMS and compared surface roughness",
+    ],
     details: [
       "AFM topographical imaging of silicon and PDMS regions.",
       "Acquisition of force curves using spectroscopy mode.",
@@ -892,6 +922,12 @@ export const projects: Project[] = [
     ],
     category: ["Research", "Master"],
     slug: "afm-nanomanipulation",
+    highlights: [
+      "Removed gelatin locally with the AFM tip to create nanoscale holes",
+      "Measured a gelatin thickness of about 30 nm from surface profiles",
+      "Fabricated a custom Mickey Mouse-shaped pattern by mechanical manipulation",
+      "Identified pattern asymmetry and material displacement as limitations",
+    ],
     details: [
       "Preparation and imaging of a gelatin-coated mica substrate.",
       "AFM operation in contact mode using a silicon probe.",
@@ -986,6 +1022,12 @@ export const projects: Project[] = [
     ],
     category: ["Research", "Master"],
     slug: "liquid-crystal-characterization",
+    highlights: [
+      "Built a homeotropic MLC7029 cell with an Aquapel-treated ITO surface",
+      "Measured the optical response under a 1 kHz AC field with polarized microscopy",
+      "Identified the Fredericks transition near 6 V",
+      "Estimated the bend elastic constant from the optical phase response",
+    ],
     details: [
       "Preparation of ITO-coated glass substrates.",
       "Surface functionalization using an Aquapel-based fluorinated self-assembled monolayer.",
@@ -1127,6 +1169,12 @@ export const projects: Project[] = [
     ],
     category: ["Research", "Master"],
     slug: "colloidal-lithography",
+    highlights: [
+      "Self-assembled 3 µm polystyrene beads at a water–air interface",
+      "Transferred the pattern to silicon using gold sputtering and bead removal",
+      "Measured 747 beads (2.67 µm mean) and 2,139 holes (1.85 µm mean) with MATLAB",
+      "Confirmed hole dimensions and a gold layer of about 31 nm by AFM",
+    ],
     details: [
       "Preparation and sonication of 3 µm polystyrene bead dispersions.",
       "Self-assembly of polystyrene microbeads at a water-air interface.",
@@ -1219,6 +1267,12 @@ export const projects: Project[] = [
     ],
     category: ["Research", "Master"],
     slug: "zno-photoconduction",
+    highlights: [
+      "Analyzed the photocurrent of a ZnO nanowire under 340 nm and 385 nm UV light",
+      "Subtracted dark current to isolate the photogenerated signal",
+      "Found sensitivity about two orders of magnitude higher at 340 nm",
+      "Explained the difference by the ZnO band gap of about 3.37 eV",
+    ],
     details: [
       "Analysis of photoconductive measurements from a metal-oxide nanowire device.",
       "Evaluation of current-voltage characteristics between -5 V and 5 V.",
@@ -1323,6 +1377,12 @@ export const projects: Project[] = [
     ],
     category: ["Research", "Master"],
     slug: "arduino-environmental-sensors",
+    highlights: [
+      "Calibrated a CdS light sensor with the inverse-square law over 20–40 cm",
+      "Measured the light sensor's rise (~0.6 s) and recovery (~0.8–1.0 s) times",
+      "Reduced DHT20 temperature error to ±0.05 °C with offset correction",
+      "Characterized the humidity response, which is limited by moisture diffusion",
+    ],
     details: [
       "Integration of a CdS photoresistor and DHT20 environmental sensor with an Arduino UNO R3.",
       "Configuration of analog and digital sensor acquisition.",
@@ -1419,6 +1479,12 @@ export const projects: Project[] = [
     ],
     category: ["Research", "Master"],
     slug: "ni-hhtp-temperature-sensor",
+    highlights: [
+      "Calibrated a Pt-100 detector with a micro-heater and a Callendar–Van Dusen fit",
+      "Measured Ni-HHTP resistance from 45 °C to 85 °C",
+      "Observed resistance falling from 20 MΩ to 2.4 MΩ, a negative temperature coefficient",
+      "Contrasted this with the rising resistance of metallic Pt",
+    ],
     details: [
       "Calibration of a Pt-100 resistance temperature detector.",
       "Application of controlled voltage steps to a micro-heater.",
@@ -1531,8 +1597,15 @@ export const projects: Project[] = [
             "Figure 5. HPLC calibration curve used for latanoprost quantification."
       }
     ],
-    category: ["Research", "Master"],
+    category: ["Research", "Master", "Thesis"],
     slug: "ncam-peptide-amphiphile-nanocarriers",
+    highlights: [
+      "Synthesized four NCAM-derived peptide amphiphiles by manual Fmoc-SPPS",
+      "Verified chemical identity by UHPLC and ESI-MS, and secondary structure by circular dichroism",
+      "Found critical aggregation concentrations from 7.6 to 19.7 µM; two stearic acid chains lowered it",
+      "Encapsulated latanoprost at 98.68%, 98.58% and 97.77% efficiency",
+      "Built an HPLC calibration curve for latanoprost quantification",
+    ],
     details: [
       "Research and development of peptide amphiphile-based nanocarriers for potential ocular drug delivery applications.",
       "Molecular design and synthesis of four NCAM-derived peptide amphiphile formulations.",
@@ -1660,6 +1733,11 @@ export const projects: Project[] = [
     ],
     category: ["Research", "Master"],
     slug: "advanced-drug-delivery-systems",
+    highlights: [
+      "Compared five nanocarrier platforms: micelles, nanoparticles, dendrimers, liposomes and antibodies",
+      "Reviewed fabrication methods and drug encapsulation strategies",
+      "Assessed stability challenges and controlled, stimuli-responsive release",
+    ],
     details: [
       "Comprehensive review of five nanoscale drug delivery platforms",
       "Analysis of nanocarrier synthesis and manufacturing methodologies",
@@ -1727,6 +1805,11 @@ export const projects: Project[] = [
     ],
     category: ["Research", "Master"],
     slug: "cryo-em-dna-technology",
+    highlights: [
+      "Reviewed Cryo-EM principles, vitrification and single-particle analysis",
+      "Examined structural validation of DNA and RNA nanostructures",
+      "Explored DNA origami superlattices as Cryo-EM support platforms",
+    ],
     details: [
       "Review of Cryo-EM principles and structural characterization",
       "Analysis of vitrification and cryogenic sample preparation",
@@ -1809,6 +1892,12 @@ export const projects: Project[] = [
     ],
     category: ["Research", "Master"],
     slug: "magnetobacterial-microrobots-pneumonia",
+    highlights: [
+      "Analyzed a magnetotactic bacteria-based microrobot for pulmonary delivery",
+      "Reviewed magnetic propulsion and hybrid cell membrane functionalization",
+      "Assessed curcumin-loaded nanoparticle delivery and mucus penetration",
+      "Identified preclinical limits and translation challenges",
+    ],
     details: [
       "Analysis of a biohybrid magnetobacterial microrobot platform",
       "Study of magnetotactic bacteria and magnetic propulsion",
@@ -1911,6 +2000,12 @@ export const projects: Project[] = [
     ],
     category: ["Research", "Bachelor"],
     slug: "cu-ni-nanoparticles-xrd-eds-simulation",
+    highlights: [
+      "Modeled FCC copper and nickel crystal structures in Avogadro",
+      "Simulated XRD patterns with GDIS using Bragg's law and Miller indices",
+      "Simulated EDS spectra with NIST DTSA-II and compared them with literature",
+      "Noted computational limits and material impurities",
+    ],
     details: [
       "Construction of copper and nickel atomic models using Avogadro",
       "Modeling of face-centered cubic (FCC) crystal structures",
@@ -1996,6 +2091,11 @@ export const projects: Project[] = [
     ],
     category: ["Research", "Bachelor"],
     slug: "bilayer-graphene-electronic-properties",
+    highlights: [
+      "Built a tight-binding model of Bernal-stacked bilayer graphene",
+      "Derived an effective two-component Hamiltonian from a four-component one",
+      "Analyzed low-energy dispersion and band-gap opening from layer asymmetry",
+    ],
     details: [
       "Study of graphene crystal structures and Bernal stacking",
       "Development of the tight-binding model",
@@ -2154,6 +2254,12 @@ export const projects: Project[] = [
     ],
     category: ["Research", "Bachelor"],
     slug: "optical-band-gap-measurement-cdso4",
+    highlights: [
+      "Measured incident, reflected and transmitted light from CdSO₄",
+      "Calculated the optical absorption coefficient",
+      "Built Tauc plots to identify direct and indirect transitions",
+      "Determined the optical band gap by linear extrapolation",
+    ],
     details: [
       "Optical characterization of CdSO₄",
       "Measurement of incident, reflected and transmitted light",
@@ -2219,6 +2325,12 @@ export const projects: Project[] = [
     ],
     category: ["Research", "Bachelor"],
     slug: "photoconductivity-n-type-silicon",
+    highlights: [
+      "Measured photoconductivity of n-type silicon with a laser and optical chopper",
+      "Recorded voltage responses with an oscilloscope",
+      "Fitted voltage–distance data with an exponential model",
+      "Assessed absorption and charge recombination effects",
+    ],
     details: [
       "Experimental investigation of photoconductivity",
       "Use of n-type silicon as the semiconductor sample",
@@ -2286,6 +2398,12 @@ export const projects: Project[] = [
     ],
     category: ["Research", "Bachelor"],
     slug: "metal-semiconductor-schottky-junction",
+    highlights: [
+      "Built an Arduino-based voltage and current acquisition circuit",
+      "Measured the I–V characteristics of the metal–semiconductor junction",
+      "Fitted the Shockley diode equation to obtain the ideality factor",
+      "Identified non-ideal contact behavior",
+    ],
     details: [
       "Study of metal-semiconductor interfaces",
       "Analysis of Schottky and ohmic contacts",
@@ -2355,6 +2473,12 @@ export const projects: Project[] = [
     ],
     category: ["Research", "Bachelor"],
     slug: "silicon-resistivity-four-point-probe",
+    highlights: [
+      "Applied the four-point probe technique to silicon",
+      "Calculated geometrical correction factors for surface and bulk resistivity",
+      "Compared measurements taken in opposite current directions",
+      "Analyzed contact resistance and measurement deviations",
+    ],
     details: [
       "Study of electrical resistivity in semiconductor materials",
       "Application of the four-point probe technique",
@@ -2452,8 +2576,14 @@ export const projects: Project[] = [
         caption: "Theoretical benzene perpendicular coupling configuration to the gold electrodes"
       }
     ],
-    category: ["Research", "Bachelor"],
+    category: ["Research", "Bachelor", "Thesis"],
     slug: "molecular-electronics-break-junction-measurements",
+    highlights: [
+      "Operated a Mechanically Controlled Break Junction with piezoelectric control",
+      "Measured the quantum conductance of a benzene junction from about 2,000 traces",
+      "Built conductance histograms of the benzene molecular junction",
+      "Modelled the junction with tight-binding theory and Green's function transmission",
+    ],
     details: [
       "Experimental investigation of molecular electronics",
       "Gold electrode preparation and sample mounting",
