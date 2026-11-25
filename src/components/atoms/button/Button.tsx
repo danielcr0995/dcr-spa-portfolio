@@ -6,7 +6,7 @@ import clsx from "clsx";
 type ButtonProps = {
   href: string;
   text: string;
-  variant?: "primary" | "secondary";
+  variant?: "primary" | "secondary" | "tertiary";
   className?: string;
   isDownloadButton?: boolean;
   pdfName?: string;
@@ -22,7 +22,7 @@ export default function Button({
                                  isDownloadButton = false,
                                  isExternalLink = false,
                                  pdfName
-                               }: ButtonProps) {
+                               }: Readonly<ButtonProps>) {
   if (isDownloadButton) {
     return (
         <a href={href} download={pdfName}
@@ -34,7 +34,7 @@ export default function Button({
 
   if (isExternalLink) {
     return (
-        <a href={href} className={clsx(styles.button, styles[variant], className)} target="_blank">
+        <a href={href} className={clsx(styles.button, styles[variant], className)} target="_blank" rel="noopener noreferrer">
           {text}
         </a>
     )
