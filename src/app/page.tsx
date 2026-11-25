@@ -89,7 +89,7 @@ export default function HomePage() {
               width={400}
               height={350}
               priority
-              style={{ width: "40%", height: "auto" }}
+              className={styles.heroProfileImage}
             />
           </div>
 

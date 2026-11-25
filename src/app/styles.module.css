@@ -83,6 +83,13 @@
   align-items: center;
 }
 
+.heroProfileImage{
+  width: 80%;
+  max-width: 400px;
+  height: auto;
+  margin-top: 2rem;
+}
+
 .badge {
   display: inline-flex;
   align-items: center;
@@ -173,6 +180,8 @@
   border-color: var(--primary);
   color: var(--primary);
 }
+
+
 
 .stats {
   display: grid;
@@ -504,5 +513,11 @@
   .heroInnerMain {
     flex-direction: row;
     align-items: space-between;
+  }
+
+  .heroProfileImage{
+    width: 40%;
+    height: auto;
+    margin-top: 0;
   }
 }
