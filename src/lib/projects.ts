@@ -13,8 +13,8 @@ export const projects: Project[] = [
     link: "#",
     category: ["Research", "Master"],
     tag: ["School", "Master", "Thesis"],
-    image: "/images/gallery-1.jpg",
-    imageAlt: "Placeholder picture of the thesis project — replace with a lab photo.",
+    image: "/images/cover_peptide_amphiphile_nanocarriers.png",
+    imageAlt: "Scientific illustration of peptide amphiphile nanocarriers for ocular drug delivery, with a micelle structure and eye cross-section",
     details: [
       "Designed and synthesized four peptide amphiphiles by Fmoc solid-phase peptide synthesis (SPPS)",
       "Self-assembled the amphiphiles into nanosystems and characterized them by HPLC/UHPLC-MS, ESI-MS and Raman spectroscopy",
@@ -62,8 +62,8 @@ export const projects: Project[] = [
     link: "#",
     category: ["Research", "Master"],
     tag: ["School", "Master"],
-    image: "/images/gallery-2.jpg",
-    imageAlt: "Placeholder picture of AFM work — replace with an AFM image.",
+    image: "/images/cover_afm_nanomechanics_nanolithography.png",
+    imageAlt: "Scientific illustration of an atomic force microscope tip characterizing silicon and PDMS surfaces and patterning gelatin at the nanoscale.",
   },
   {
     slug: "mof-co2-sensor-data-pipeline",
@@ -77,8 +77,8 @@ export const projects: Project[] = [
     link: "#",
     category: ["Research", "Master"],
     tag: ["School", "Master"],
-    image: "/images/gallery-3.jpg",
-    imageAlt: "Placeholder picture of the sensor project — replace with a real figure.",
+    image: "/images/cover_mof_co2_sensor_data_pipeline.png",
+    imageAlt: "Scientific visualization of a MOF-based CO₂ sensor in a controlled gas chamber, connected to a computer displaying sensor response curves and fitted data.",
   },
   {
     slug: "molecular-dynamics-of-nanosystems",
@@ -92,8 +92,8 @@ export const projects: Project[] = [
     link: "#",
     category: ["Research", "Master"],
     tag: ["School", "Master"],
-    image: "/images/gallery-1.jpg",
-    imageAlt: "Placeholder picture of the simulation project — replace with a snapshot.",
+    image: "/images/cover_molecular_dynamics_nanosystems.png",
+    imageAlt: "Scientific 3D visualization of a self-assembling peptide amphiphile nanosystem in a molecular dynamics simulation environment.",
   },
   {
     slug: "basic-molecular-electronics-mcbj",
@@ -356,10 +356,10 @@ export const projects: Project[] = [
       "Gas Sensors",
       "Materials Science"
     ],
-    image: "/images/gallery-3.jpg",
+    image: "/images/projects/master/cover_gas_sensor_if142.png",
     // image: "/images/projects/gas-sensor/figure-2.png",
     imageAlt:
-        "Resistance versus relative humidity measurements for the IF142 metal-organic framework.",
+        "3D scientific visualization of an IF142 metal-organic framework on an interdigitated electrode sensor, with CO₂ molecules and gas-response plots.",
     images: [
       {
         src: "/images/projects/master/nanosensors_gas_sensor_IV_RH_thin_grid.png",
@@ -444,10 +444,10 @@ export const projects: Project[] = [
       "Molecular Dynamics",
       "Computational Biophysics"
     ],
-    image: "/images/projects/master/modelling_chignolin_cluster_all_white_image2.png",
+    image: "/images/projects/master/cover_molecular_dynamics_chignolin.png",
     // image: "/images/projects/chignolin/figure-3.png",
     imageAlt:
-        "Visualization of the six structural clusters identified during the molecular dynamics simulation of chignolin.",
+        "Scientific illustration of chignolin folding in aqueous solution, showing its peptide structure and progression from extended to compact conformations.",
     images: [
       {
         src: "/images/projects/master/modelling_chignolin_chignolin_flat.png",
@@ -753,10 +753,10 @@ export const projects: Project[] = [
       "Mechanical Characterization",
       "Materials Science"
     ],
-    image: "/images/gallery-3.jpg",
+    image: "/images/projects/master/cover_afm_force_spectroscopy_silicon_pdms.png",
     // image: "/images/projects/afm-force-spectroscopy/figure-4.png",
     imageAlt:
-        "Comparison of forward and backward AFM force curves for silicon and PDMS.",
+        "AFM cantilever probing silicon and soft PDMS, illustrating their contrasting mechanical responses and force spectroscopy measurements.",
     images: [
       {
         src: "/images/projects/master/characterization_force_spec_silicon_scale_processed.png",
@@ -866,10 +866,10 @@ export const projects: Project[] = [
       "Nanofabrication",
       "Surface Modification"
     ],
-    image: "/images/gallery-3.jpg",
+    image: "/images/projects/master/cover_afm_nanomanipulation.png",
     // image: "/images/projects/afm-nanomanipulation/figure-3.png",
     imageAlt:
-        "Mickey Mouse-shaped nanoscale pattern fabricated on a gelatin substrate using AFM nanomanipulation.",
+        "Scientific illustration of AFM nanomanipulation creating a Mickey Mouse-shaped pattern and nanoscale holes in a gelatin-coated substrate.",
     images: [
       {
         src: "/images/projects/master/characterization_nanomanipulation_gelatin_zoom_out_hole10.png",
@@ -949,10 +949,9 @@ export const projects: Project[] = [
       "Experimental Physics",
       "Data Analysis"
     ],
-    image: "/images/gallery-3.jpg",
+    image: "/images/projects/master/cover_liquid_crystal_fredericks_transition.png",
     // image: "/images/projects/liquid-crystal/figure-1.png",
-    imageAlt:
-        "Polarized optical microscopy images of a nematic liquid crystal cell before and during electric-field-induced reorientation.",
+    imageAlt: "Scientific illustration of a homeotropic nematic liquid crystal cell undergoing voltage-induced Fredericks transition, with optical response and polarized microscopy insets.",
     images: [
       {
         src: "/images/projects/master/colloids_homeothropic_lc_lc.jpeg",
@@ -1049,10 +1048,9 @@ export const projects: Project[] = [
       "MATLAB",
       "Biosensor Surfaces"
     ],
-    image: "/images/gallery-3.jpg",
-    // image: "/images/projects/colloidal-lithography/figure-6.png",
+    image: "/images/projects/master/cover_colloidal_lithography_silicon.png",
     imageAlt:
-        "SEM characterization of self-assembled polystyrene bead micropatterns on a silicon substrate.",
+        "Bright scientific illustration of colloidal lithography on silicon, showing self-assembled polystyrene beads, patterned holes, and resulting micro-pillars.",
     images: [
       {
         src: "/images/projects/master/bionanoeng_beads.png",
@@ -1195,10 +1193,10 @@ export const projects: Project[] = [
       "Data Analysis",
       "Sensor Sensitivity"
     ],
-    image: "/images/gallery-3.jpg",
+    image: "/images/projects/master/cover_zno_nanowire_photodetector.png",
     // image: "/images/projects/photoconduction/figure-3.png",
     imageAlt:
-        "Photogenerated current as a function of photon flux for a ZnO nanowire photodetector at 340 nm and 385 nm.",
+        "Bright scientific illustration of a ZnO nanowire photodetector connected to gold electrodes under ultraviolet illumination, with a conceptual crystal-lattice inset.",
     images: [
       {
         src: "/images/projects/master/nanosensors_photogenerated_current_photgenerated_current_vs_voltage.png",
@@ -1235,17 +1233,11 @@ export const projects: Project[] = [
     ],
     paragraphs: [
       "This project focused on the data analysis of photoconduction experiments performed using a photoconductive light sensor based on a single metal-oxide nanowire. The objective was to investigate how the generated photocurrent depends on the applied voltage, photon flux, and wavelength of the incident ultraviolet radiation.",
-
       "The experiments measured current-voltage characteristics by applying voltages ranging from -5 V to 5 V in increments of 0.2 V. The nanowire was illuminated using monochromatic ultraviolet sources at wavelengths of 340 nm and 385 nm, under five decreasing photon flux conditions, ranging from Φ1 = 2.01 × 10⁻⁸ to Φ5 = 1.01 × 10⁻⁹ ph·m⁻²·s⁻¹. Measurements were also obtained in dark conditions to establish the baseline current.",
-
       "The initial analysis compared the current-voltage characteristics under the different illumination conditions. At 340 nm, the measured current increased with photon flux, indicating an effective photoconductive response. In contrast, the curves obtained at 385 nm were almost overlapping, suggesting that most of the measured current originated from the dark current contribution.",
-
       "To isolate the photogenerated contribution, the dark current was subtracted from the measured current for each illumination condition. The resulting photocurrent-voltage curves were analyzed and compared. The photocurrent exhibited noisy behavior, although the theoretical relationship between photocurrent and applied voltage is linear for the photoconductor considered.",
-
       "The relationship between photon flux and photocurrent was subsequently investigated at a fixed applied voltage of 1 V. The results showed an approximately linear relationship, although some noise was observed in the measurements. Linear fitting was used to evaluate the response of the nanowire to different illumination intensities.",
-
       "The sensor sensitivity was calculated from the slope of the photocurrent versus photon flux relationship, taking into account the wavelength-dependent photon energy. The calculated sensitivities were 2.13 × 10²⁴ µAW⁻¹m⁻² at 340 nm and 1.82 × 10²² µAW⁻¹m⁻² at 385 nm. The sensitivity at 340 nm was therefore approximately two orders of magnitude higher.",
-
       "Finally, the difference in photoconductive response was interpreted in relation to the electronic band structure of ZnO. Photons at 340 nm have an energy of approximately 3.65 eV, exceeding the ZnO band gap of approximately 3.37 eV. In comparison, photons at 385 nm have an energy of approximately 3.22 eV, below the band gap, explaining the significantly weaker photogeneration observed at this wavelength."
     ],
     context:
@@ -1281,10 +1273,10 @@ export const projects: Project[] = [
       "Data Acquisition",
       "Environmental Monitoring"
     ],
-    image: "/images/gallery-3.jpg",
+    image: "/images/projects/master/cover_arduino_environmental_sensors.png",
     // image: "/images/projects/arduino-sensors/figure-3.png",
     imageAlt:
-        "Calibration curve of a CdS photoresistor showing the linear operating region and fitted calibration model.",
+        "Arduino UNO R3 connected to light, temperature, and humidity sensors, with calibration and response plots on a bright laboratory background.",
     images: [
       {
         src: "/images/projects/master/nanosensors_characterization_light_temp_hum_sensorexperimental_setup.jpg",
@@ -1407,10 +1399,10 @@ export const projects: Project[] = [
       "Sensor Calibration",
       "Resistive Characterization"
     ],
-    image: "/images/gallery-3.jpg",
+    image: "/images/projects/master/cover_ni_hhtp_temperature_sensor.png",
     // image: "/images/projects/ni-hhtp-temperature/figure-2.png",
     imageAlt:
-        "Resistance versus temperature characterization curve of a Ni-HHTP-based resistive sensor.",
+        "Bright scientific illustration of a Ni-HHTP resistive nanosensor on gold interdigitated electrodes, with a molecular framework inset and temperature-dependent resistance plots.",
     images: [
       {
         src: "/images/projects/master/nanosensors_temperature_sensor_calibration_fit.png",
@@ -1497,10 +1489,10 @@ export const projects: Project[] = [
       "Glaucoma",
       "Nanomaterials Characterization"
     ],
-    image: "/images/pa_glaucoma_therapy_infographic.png",
+    image: "/images/projects/master/cover_ncam_peptide_amphiphile_nanocarriers.png",
     // image: "/images/projects/ncam-peptide-amphiphiles/figure-4-15.png",
     imageAlt:
-        "Fluorescence characterization of NCAM-derived peptide amphiphiles showing the critical aggregation concentration of the two-stearic-acid formulation.",
+        "Bright scientific illustration of NCAM-derived peptide amphiphile nanocarriers encapsulating latanoprost, with a molecular structure inset and ocular drug delivery pathway.",
     images: [
       {
         src: "/images/projects/master/thesis_nanosystems_pa_schema_pa.png",
@@ -1635,10 +1627,10 @@ export const projects: Project[] = [
       "Liposomes",
       "Dendrimers"
     ],
-    image: "/images/gallery-3.jpg",
+    image: "/images/projects/master/cover_advanced_drug_delivery_systems.png",
     // image: "/images/projects/advanced-drug-delivery/cover.png",
     imageAlt:
-        "Scientific illustration representing nanoscale drug delivery systems and nanocarriers",
+        "Bright scientific illustration of polymeric micelles, polymeric nanoparticles, dendrimers, liposomes, and antibody-based drug delivery systems.",
     images: [
       {
         src: "/images/projects/master/adv_drug_delivery_pm-drug_release_ph_changes.png",
@@ -1712,10 +1704,10 @@ export const projects: Project[] = [
       "Nanotechnology",
       "Literature Review"
     ],
-    image: "/images/gallery-3.jpg",
+    image: "/images/projects/master/cover_cryo_em_dna_technology.png",
     // image: "/images/projects/cryo-em-dna/cover.png",
     imageAlt:
-        "Cryogenic electron microscopy and DNA nanostructure visualization",
+        "Bright scientific illustration of a cryogenic electron microscope, vitrified sample grid, and DNA origami nanostructures.",
     images: [
       {
         src: "/images/projects/master/characterization_cryo_em_cryoem_workflow.jpg",
@@ -1784,10 +1776,10 @@ export const projects: Project[] = [
       "Targeted Drug Delivery",
       "Research Analysis"
     ],
-    image: "/images/gallery-3.jpg",
+    image: "/images/projects/master/cover_magnetobacterial_microrobots_pneumonia.png",
     // image: "/images/projects/magnetobacterial-microrobots/cover.png",
     imageAlt:
-        "Conceptual illustration of a magnetotactic bacterial microrobot for targeted pulmonary drug delivery",
+        "Bright scientific illustration of a magnetotactic bacterial microrobot carrying therapeutic nanoparticles toward infected lung tissue under magnetic guidance.",
     images: [
       {
         src: "/images/projects/master/bionanoeng_living_machines_nanorobot_process_1.png",
@@ -1871,10 +1863,10 @@ export const projects: Project[] = [
       "GDIS",
       "NIST DTSA-II"
     ],
-    image: "/images/gallery-3.jpg",
+    image: "/images/projects/bachelor/cover_cu_ni_nanoparticle_xrd_eds.png",
     // image: "/images/projects/cu-ni-nanoparticles/cover.png",
     imageAlt:
-        "Atomic models and simulated XRD spectra of copper and nickel nanoparticles",
+        "Bright scientific illustration of copper and nickel nanoparticle crystal structures with simulated XRD diffraction patterns and EDS spectra.",
     images: [
       {
         src: "/images/projects/bachelor/spectroscopy2_np_cu_ni_Cu_Avogadrounitfull cut.png",
@@ -1976,10 +1968,10 @@ export const projects: Project[] = [
       "Electronic Properties",
       "Nanomaterials"
     ],
-    image: "/images/gallery-3.jpg",
+    image: "/images/projects/bachelor/cover_bilayer_graphene_tunable_band_gap.png",
     // image: "/images/projects/bilayer-graphene/cover.png",
     imageAlt:
-        "Bilayer graphene lattice and electronic band structure near the K points",
+        "Bright scientific illustration of Bernal-stacked bilayer graphene under a perpendicular electric field, with a conceptual tunable electronic band-gap diagram.",
     images: [
       {
         src: "/images/projects/bachelor/solid_state_physics2_bilayer_graphen_bg2.PNG",
@@ -2145,9 +2137,9 @@ export const projects: Project[] = [
       "CdSO₄",
       "Data Analysis"
     ],
-    image: "/images/gallery-3.jpg",
+    image: "/images/projects/bachelor/cover_cdso4_optical_band_gap.png",
     // image: "/images/projects/band-gap-measurement/cover.png",
-    imageAlt: "Optical band gap determination through Tauc plot analysis",
+    imageAlt: "Bright scientific illustration of an optical spectroscopy setup measuring a CdSO₄ crystal, with absorption and Tauc plot insets.",
     images: [
       {
         src: "/images/projects/bachelor/semiconductors_bandgap_measure_direc_indirect_bandgap.png",
@@ -2210,9 +2202,9 @@ export const projects: Project[] = [
       "Oscilloscope",
       "Data Fitting"
     ],
-    image: "/images/gallery-3.jpg",
+    image: "/images/projects/bachelor/cover_photoconductivity_n_type_silicon.png",
     // image: "/images/projects/photoconductivity/cover.png",
-    imageAlt: "Photoconductivity experiment using laser illumination on an n-type silicon sample",
+    imageAlt: "Bright scientific illustration of laser illumination on an n-type silicon sample, with an optical chopper, oscilloscope response, and exponential voltage-distance plot.",
     images: [
       {
         src: "/images/projects/bachelor/semiconductors_photoconductivity_Setup.png",
@@ -2277,9 +2269,9 @@ export const projects: Project[] = [
       "Electrical Characterization",
       "Data Fitting"
     ],
-    image: "/images/gallery-3.jpg",
+    image: "/images/projects/bachelor/cover_metal_semiconductor_schottky_junction.png",
     // image: "/images/projects/schottky-diode/cover.png",
-    imageAlt: "Current-voltage characterization of a metal-semiconductor Schottky junction",
+    imageAlt: "Bright scientific illustration of an n-type silicon Schottky contact measured with a gold probe and Arduino-based circuit, with band-bending and current-voltage plots.",
     images: [
       {
         src: "/images/projects/bachelor/semiconductors_metalsemiconductor_semiconductoresmetalsemiconductos.png",
@@ -2346,9 +2338,9 @@ export const projects: Project[] = [
       "Material Properties",
       "Data Analysis"
     ],
-    image: "/images/gallery-3.jpg",
+    image: "/images/projects/bachelor/cover_silicon_resistivity_four_point_probe.png",
     // image: "/images/projects/silicon-resistivity/cover.png",
-    imageAlt: "Four-point probe technique for measuring silicon electrical resistivity",
+    imageAlt: "Bright scientific illustration of a four-point probe measuring a silicon wafer, with separate current and voltage connections and measurement diagrams.",
     images: [
       {
         src: "/images/projects/bachelor/semiconductors_four_points_method_fourpointsmethodscheme.png",
@@ -2420,10 +2412,9 @@ export const projects: Project[] = [
       "Experimental Physics",
       "Data Analysis"
     ],
-    image: "/images/thesis_bachelor_benzene_perpendicular.png",
-    // image:"/images/projects/molecular-electronics/cover.png",
+    image: "/images/projects/bachelor/cover_molecular_electronics_benzene_mcbj.png",
     imageAlt:
-        "Molecular junction connecting a benzene molecule between gold electrodes",
+        "Benzene molecule connected between gold nanoelectrodes in a mechanically controlled break junction, with illustrative conductance traces and histogram",
     images: [
       {
         src: "/images/projects/bachelor/thesis_molecular_electronics_mcbj_main_head.png",
