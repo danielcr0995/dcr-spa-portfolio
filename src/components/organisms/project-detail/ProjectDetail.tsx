@@ -24,6 +24,7 @@ export function ProjectDetail({project}: Readonly<ProjectDetailProps>) {
     imageAlt,
     images = [],
     details = [],
+      highlights = [],
     paragraphs = [],
     tools = [],
     date,
@@ -79,6 +80,14 @@ export function ProjectDetail({project}: Readonly<ProjectDetailProps>) {
               </div>
           )}
 
+          {highlights && highlights.length > 0 && (
+              <Section title="Highlights">
+                <ul className={styles.highlightList}>
+                  {highlights.map((h) => <li key={h}>{h}</li>)}
+                </ul>
+              </Section>
+          )}
+
           {/* Full write-up */}
           {paragraphs.length > 0 && (
               <Section title="The project">
@@ -92,21 +101,37 @@ export function ProjectDetail({project}: Readonly<ProjectDetailProps>) {
               </Section>
           )}
 
-          {/* Steps */}
+
+
           {details.length > 0 && (
-              <Section title="What I did">
+              <details className={styles.allDetails}>
+                <summary>All steps ({details.length})</summary>
                 <ol className={styles.stepList}>
                   {details.map((d, i) => (
                       <li key={i} className={styles.step}>
-                  <span className={styles.stepNumber}>
-                    {String(i + 1).padStart(2, "0")}
-                  </span>
+                        <span className={styles.stepNumber}>{String(i + 1).padStart(2, "0")}</span>
                         <p className={styles.stepText}>{d}</p>
                       </li>
                   ))}
                 </ol>
-              </Section>
+              </details>
           )}
+
+          {/*/!* Steps *!/*/}
+          {/*{details.length > 0 && (*/}
+          {/*    <Section title="What I did">*/}
+          {/*      <ol className={styles.stepList}>*/}
+          {/*        {details.map((d, i) => (*/}
+          {/*            <li key={i} className={styles.step}>*/}
+          {/*        <span className={styles.stepNumber}>*/}
+          {/*          {String(i + 1).padStart(2, "0")}*/}
+          {/*        </span>*/}
+          {/*              <p className={styles.stepText}>{d}</p>*/}
+          {/*            </li>*/}
+          {/*        ))}*/}
+          {/*      </ol>*/}
+          {/*    </Section>*/}
+          {/*)}*/}
 
           {/* Figures */}
           {images.length > 0 && (

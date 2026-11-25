@@ -4,6 +4,7 @@ import {profile} from "@/lib/cv";
 import {ProjectDetail} from "@/components/organisms/project-detail/ProjectDetail";
 import {slugify} from "@/utils/utils";
 import {projects} from "@/lib/projects";
+import {Suspense} from "react";
 
 
 type Props = {
@@ -24,7 +25,14 @@ export async function generateMetadata({params}: Props): Promise<Metadata> {
   };
 }
 
-export default async function SingleProjectPage({params}: Readonly<Props>) {
+export default function SingleProjectPage({params}: Readonly<Props>) {
+  return (
+      <Suspense fallback={<div style={{minHeight: "60vh"}} />}>
+        <ProjectLoader params={params} />
+      </Suspense>
+  );
+}
+async function ProjectLoader({params}: Readonly<Props>) {
   const {slug} = await params;
   const project = projects.find((p) => p.slug === slug);
   if (!project) notFound();
