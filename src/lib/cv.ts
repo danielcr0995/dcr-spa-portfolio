@@ -1,37 +1,41 @@
-// src/data/cv.ts
+// src/data/pdf.ts
 // ============= Edit this file to fill the portfolio with your own CV details =============
 // Every picture below is a placeholder: replace the file in public/images
 // with a real photo of your own work, keeping the same name (or change the path here).
 
-export const profile = {
+
+
+import {Education, Experience, Hobby, Profile, SkillGroup} from "@/lib/definitions";
+
+export const profile: Profile = {
   name: "Daniel Correa",
   initials: "DC",
   role: "Nanoscience MSc · Backend Software Engineer",
   location: "Leuven, Belgium",
   availability: "Available full-time immediately",
   tagline:
-    "Erasmus Mundus MSc candidate in Nanoscience and Nanotechnology (KU Leuven · Universitat de Barcelona) with 3 years of backend engineering — bridging research-grade nanoscience with robust software.",
+      "Erasmus Mundus MSc candidate in Nanoscience and Nanotechnology (KU Leuven · Universitat de Barcelona) with 3 years of backend engineering — bridging research-grade nanoscience with robust software.",
   email: "daniel.correa.1995@gmail.com",
-  cvUrl: "/cv/cv.pdf",
+  cvUrl: "/pdf/pdf.pdf",
   cvFileDownloadName: "DanielCorreaCV.pdf",
   stats: [
-    { value: "3", label: "Years backend engineering" },
-    { value: "5,000+", label: "Accounts/day enabled" },
-    { value: ">95%", label: "Drug encapsulation efficiency" },
+    {value: "3", label: "Years backend engineering"},
+    {value: "5,000+", label: "Accounts/day enabled"},
+    {value: ">95%", label: "Drug encapsulation efficiency"},
   ],
   links: [
-    { label: "LinkedIn", url: "https://linkedin.com/in/daniel-correa0995" },
-    { label: "GitHub", url: "https://github.com/danielcr0995" },
+    {label: "LinkedIn", url: "https://linkedin.com/in/daniel-correa0995"},
+    {label: "GitHub", url: "https://github.com/danielcr0995"},
   ],
 };
 
-export const experience = [
+export const experience: Experience[] = [
   {
     title: "Production Systems Engineer",
     company: "Banco Pichincha — Quito, Ecuador",
     period: "May 2022 — Sept 2024",
     summary:
-      "Core contributor to a team-led redesign into reactive Spring Boot/WebFlux microservices at one of Latin America's largest banks.",
+        "Core contributor to a team-led redesign into reactive Spring Boot/WebFlux microservices at one of Latin America's largest banks.",
     points: [
       "Built microservices from scratch; system scaled to 5,000+ account creations/day, plus 1,000+ specialized accounts/day",
       "Java Spring Boot & WebFlux with Clean Architecture and SOLID; integrated Salesforce, PostgreSQL, MongoDB, Redis",
@@ -72,8 +76,9 @@ export const experience = [
     period: "Apr 2020 — Jun 2020",
     summary: "Supported physics students during the semester.",
     points: [
-      "Graded homework and laboratory assignments", 
-      "Provided tutoring and student support", "Designed  laboratory practices to be performed in a virtual environment"
+      "Graded homework and laboratory assignments",
+      "Provided tutoring and student support",
+      "Designed laboratory practices to be performed in a virtual environment",
     ],
     image: "/images/science_teacher_physics.jpg",
     imageAlt: "Placeholder photo for teaching assistant role — replace with a real picture.",
@@ -86,77 +91,38 @@ export const experience = [
     points: [
       "Built prototypes with 3D printers, laser cutters and CNC machines",
       "Maintained equipment and wrote safe operating procedures",
-      "Developed an innovative, laser-cut plastic bottle cutter as an alternative to 3D-printed designs. "
+      "Developed an innovative, laser-cut plastic bottle cutter as an alternative to 3D-printed designs.",
     ],
-    pointsUrl: ["","","https://www.thingiverse.com/thing:2988529"],
+    pointsUrl: ["", "", "https://www.thingiverse.com/thing:2988529"],
     image: "/images/fablab.jpeg",
     imageAlt: "Placeholder photo for the FabLab — replace with a real picture of your work.",
   },
 ];
 
-export const education = [
+export const education: Education[] = [
   {
     degree: "Erasmus Mundus MSc in Nanoscience and Nanotechnology",
     school: "KU Leuven (Year 1) · Universitat de Barcelona (Year 2)",
     period: "Sept 2024 — Aug 2026",
     detail:
-      "Specialization in Nanomedicine and Nanotheranostics. Thesis at IQAC-CSIC: nanosystems based on peptide amphiphiles for drug encapsulation — four peptide amphiphiles synthesized by Fmoc-SPPS, >95% latanoprost encapsulation. Also AFM nanolithography and force spectroscopy, MOF CO₂ sensor data pipeline (R² = 0.996), and molecular dynamics.",
+        "Specialization in Nanomedicine and Nanotheranostics. Thesis at IQAC-CSIC: nanosystems based on peptide amphiphiles for drug encapsulation — four peptide amphiphiles synthesized by Fmoc-SPPS, >95% latanoprost encapsulation. Also AFM nanolithography and force spectroscopy, MOF CO₂ sensor data pipeline (R² = 0.996), and molecular dynamics.",
     image: "/images/kuleuven.jpeg",
     imageAlt: "Placeholder photo for the MSc — replace with a campus or thesis picture.",
-    url: "/studies/master"
+    url: "/studies/master",
   },
   {
     degree: "B.S. Physics",
     school: "Yachay Tech University — Urcuquí, Ecuador",
     period: "GPA 3.5 / 4.0",
     detail:
-      "Thesis: Basic Molecular Electronics via Mechanically Controlled Break Junction (MCBJ) — measured single-molecule conductance with sub-nm electrode gaps and correlated it with computed transmission spectra.",
+        "Thesis: Basic Molecular Electronics via Mechanically Controlled Break Junction (MCBJ) — measured single-molecule conductance with sub-nm electrode gaps and correlated it with computed transmission spectra.",
     image: "/images/yachaytech.jpg",
     imageAlt: "Placeholder photo for the physics degree — replace with a real picture.",
-    url: "/studies/bachelor"
+    url: "/studies/bachelor",
   },
 ];
 
-export const projects = [
-  {
-    name: "Peptide amphiphile nanocarriers",
-    description: "MSc thesis at IQAC-CSIC: self-assembling peptides for ocular drug delivery.",
-    result: "Result: >95% encapsulation efficiency",
-    link: "#",
-    tag: "School",
-    image: "/images/gallery-1.jpg",
-    imageAlt: "Placeholder picture of the thesis project — replace with a lab photo.",
-  },
-  {
-    name: "Reactive account microservices",
-    description: "Spring Boot/WebFlux redesign of account creation at Banco Pichincha.",
-    result: "Result: 5,000+ accounts/day",
-    link: "#",
-    tag: "Work",
-    image: "/images/gallery-2.jpg",
-    imageAlt: "Placeholder picture of the microservices project — replace with a diagram.",
-  },
-  {
-    name: "Pura Fruta e-commerce",
-    description: "MERN delivery platform with a Python order management system.",
-    result: "Result: $25K in sales",
-    link: "#",
-    tag: "Personal",
-    image: "/images/gallery-3.jpg",
-    imageAlt: "Placeholder picture of Pura Fruta — replace with a screenshot.",
-  },
-  {
-    name: "AFM nanomechanics & nanolithography",
-    description: "Young's moduli from force curves on Si and PDMS; ~30 nm patterning on gelatin.",
-    result: "Result: <1% error vs. literature",
-    link: "#",
-    tag: "School",
-    image: "/images/gallery-1.jpg",
-    imageAlt: "Placeholder picture of AFM work — replace with an AFM image.",
-  },
-];
-
-export const skills = [
+export const skills: SkillGroup[] = [
   {
     group: "Nanoscience & Lab",
     items: ["SPPS", "Drug encapsulation", "HPLC/UHPLC-MS", "Raman", "AFM", "TEM/HRTEM/SAED", "ESI-MS"],
@@ -173,15 +139,18 @@ export const skills = [
     group: "Infrastructure & tools",
     items: ["Git", "Azure DevOps", "PostgreSQL", "MongoDB", "Redis", "Docker", "CI/CD", "Agile/Scrum"],
   },
-  { group: "Fabrication", items: ["3D printing", "Laser cutting", "CNC machines", "LaTeX"] },
-  { group: "Languages", items: ["Spanish — Native", "English — Professional", "Dutch — A2 (learning)"] },
+  {group: "Fabrication", items: ["3D printing", "Laser cutting", "CNC machines", "LaTeX"]},
+  {
+    group: "Languages",
+    items: ["Spanish — Native", "English — Professional", "Dutch — A2 (learning)"]
+  },
 ];
 
-export const hobbies = [
+export const hobbies: Hobby[] = [
   {
     icon: "⚽",
     name: "Football",
-    note: "Team player on and off the pitch",
+    note: "", // Team player on and off the pitch
     image: "/images/hobby-1.jpg",
     imageAlt: "Placeholder photo for football — replace with your own picture.",
   },
@@ -222,7 +191,7 @@ export const hobbies = [
   // },
 ];
 
-export const extras = [
+export const extras: string[] = [
   "Build Reactive MicroServices using Spring WebFlux/SpringBoot — Udemy, 2023",
   "Java Unit Test: Mockito & Powermock — Udemy, 2023",
   "The Complete SSL and TLS Guide — Udemy, 2023",
@@ -231,4 +200,4 @@ export const extras = [
   "Student Excellence Day — imec, Leuven, Oct 2025",
   "Advanced Functional Nanomaterials School — Yachay Tech, 2020",
   "Acton University leadership programme — Michigan, USA, 2018",
-];  
+];
