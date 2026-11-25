@@ -13,7 +13,7 @@
   gap: 1.5rem;
 }
 
-/* Shared card look (hover lift comes from the global .card-lift class) */
+/* Shared project-card look (hover lift comes from the global .project-card-lift class) */
 
 .figureCard,
 .courseCard,
