@@ -19,9 +19,9 @@ export const profile: Profile = {
   cvUrl: "/pdf/cv.pdf",
   cvFileDownloadName: "DanielCorreaCV.pdf",
   stats: [
-    {value: "3", label: "Years backend engineering"},
-    {value: "5,000+", label: "Accounts/day enabled"},
-    {value: "20+", label: "Lab experiments"},
+    // {value: "3", label: "Years backend engineering"},
+    // {value: "5,000+", label: "Accounts/day enabled"},
+    // {value: "20+", label: "Lab experiments"},
   ],
   links: [
     {label: "LinkedIn", url: "https://linkedin.com/in/daniel-correa0995"},
