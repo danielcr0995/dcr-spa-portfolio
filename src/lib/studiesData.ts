@@ -91,9 +91,21 @@ export const mscTechniques: string[] = [
   "HPLC / UHPLC-MS",
   "ESI-MS",
   "Raman spectroscopy",
-  "AFM (force spectroscopy & lithography)",
+  "Circular dichroism and thioflavin T fluorescence",
+  "Critical aggregation concentration analysis",
+  "Encapsulation efficiency by centrifugal ultrafiltration",
+  "AFM (imaging, force spectroscopy & nanomanipulation)",
+  "WSxM image processing",
   "TEM / HRTEM / SAED",
+  "SEM",
+  "Colloidal lithography and gold sputtering",
   "Molecular dynamics (AMBER/VMD)",
+  "Liquid crystal cell fabrication and polarized microscopy",
+  "Gas sensor characterization (interdigitated electrodes, CO₂ pulses)",
+  "Photoconductivity measurements of ZnO nanowires",
+  "Sensor calibration with Arduino",
+  "Pt-100 temperature calibration and resistive nanosensors",
+  "Cryo-EM structural analysis",
   "Python data analysis (pandas, NumPy, SciPy)",
 ];
 
@@ -188,8 +200,24 @@ export const bscCourses: StudiesCourse[] = [
   },
 ];
 
-export const bscProjects: StudiesProject[] = [];
 
-export const bscTechniques: string[] = [];
+export const bscTechniques: string[] = [
+  "Crystal structure simulation (Avogadro, GDIS)",
+  "XRD simulation with Bragg's law and Miller indices",
+  "EDS simulation (NIST DTSA-II)",
+  "Tight-binding modelling and band structure analysis",
+  "Quantum transport with Green's functions",
+  "Template-assisted nanocasting (SBA-15)",
+  "Nitrogen adsorption and BET surface area",
+  "XPS, SEM and EDX characterization",
+  "Vibrating sample magnetometry (VSM)",
+  "Tauc plot optical band gap analysis",
+  "Photoconductivity measurements (laser, optical chopper)",
+  "I–V characterization and Shockley diode fitting",
+  "Four-point probe resistivity measurement",
+  "Mechanically controlled break junction (MCBJ)",
+  "LabVIEW data acquisition and conductance histograms",
+  "Arduino data acquisition",
+];
 
 export const bscEvents: string[] = [];

@@ -132,7 +132,7 @@ export const projects: Project[] = [
     slug: "haku-travel",
     name: "Haku travel",
     context: "",
-    description: "",
+    description: "MERN-based e-commerce platform for tourism in the Galápagos Islands.",
     result: "",
     link: "https://galapagostravelworld.com/",
     isExternalLink: true,

@@ -1,4 +1,4 @@
-import { PageIntro } from '@/components/organisms/page-intro/PageIntro';
+import {PageIntro} from '@/components/organisms/page-intro/PageIntro';
 import Image from 'next/image';
 import styles from './bachelor.module.css'
 import Button from "@/components/atoms/button/Button";
@@ -39,7 +39,19 @@ export default function BachelorPage() {
   const bscProjects = projects.filter((p) => p.category.includes("Bachelor"));
 
   const projectSummaries: ProjectSummary[] = bscProjects.map(
-      ({name, description, result, image, imageAlt, link, isExternalLink, slug, course, category, date}) => ({
+      ({
+         name,
+         description,
+         result,
+         image,
+         imageAlt,
+         link,
+         isExternalLink,
+         slug,
+         course,
+         category,
+         date
+       }) => ({
         name,
         description,
         result,
@@ -75,7 +87,7 @@ export default function BachelorPage() {
                 width={433}
                 height={200}
                 priority
-                className = {styles.logo}
+                className={styles.logo}
             />
             <Image
                 src="/images/yachay_tech_physics_school_logo.png"
@@ -83,7 +95,7 @@ export default function BachelorPage() {
                 width={655}
                 height={200}
                 priority
-                className = {styles.logo}
+                className={styles.logo}
             />
           </div>
           <Button
@@ -149,30 +161,35 @@ export default function BachelorPage() {
           <Section title="Projects">
             <div className={styles.grid3}>
               {projectSummaries.map((p) => (
-                  <ProjectCard key={p.slug ? p.slug : slugify(p.name)} project={p} isSchoolPage={true}/>
+                  <ProjectCard key={p.slug ? p.slug : slugify(p.name)} project={p}
+                               isSchoolPage={true}/>
               ))}
             </div>
           </Section>
 
-          <Section title="Techniques I learned">
-            <div className={styles.chips}>
-              {bscTechniques.map((t) => (
-                  <span key={t} className={styles.chip}>
+          {bscTechniques.length > 0 && (
+              <Section title="Techniques I learned">
+                <div className={styles.chips}>
+                  {bscTechniques.map((t) => (
+                      <span key={t} className={styles.chip}>
                 {t}
               </span>
-              ))}
-            </div>
-          </Section>
+                  ))}
+                </div>
+              </Section>
+          )}
 
-          <Section title="Events &amp; schools">
-            <div className={styles.eventsCard}>
-              <ul className={styles.eventsList}>
-                {bscEvents.map((e) => (
-                    <li key={e}>→ {e}</li>
-                ))}
-              </ul>
-            </div>
-          </Section>
+          {bscEvents.length > 0 && (
+              <Section title="Events &amp; schools">
+                <div className={styles.eventsCard}>
+                  <ul className={styles.eventsList}>
+                    {bscEvents.map((e) => (
+                        <li key={e}>→ {e}</li>
+                    ))}
+                  </ul>
+                </div>
+              </Section>
+          )}
         </div>
       </div>
   );

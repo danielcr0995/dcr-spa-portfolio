@@ -4,7 +4,6 @@
 // with a real photo of your own work, keeping the same name (or change the path here).
 
 
-
 import {Education, Experience, Hobby, Profile, SkillGroup} from "@/lib/definitions";
 
 export const profile: Profile = {
@@ -125,24 +124,83 @@ export const education: Education[] = [
 export const skills: SkillGroup[] = [
   {
     group: "Nanoscience & Lab",
-    items: ["SPPS", "Drug encapsulation", "HPLC/UHPLC-MS", "Raman", "AFM", "TEM/HRTEM/SAED", "ESI-MS"],
+    items: [
+      "SPPS",
+      "Drug encapsulation",
+      "HPLC/UHPLC-MS",
+      "Raman",
+      "AFM",
+      "TEM/HRTEM/SAED",
+      "ESI-MS",
+      "Colloidal lithography",
+      "Gas sensing",
+      "Photoconductivity",
+    ],
   },
   {
     group: "Data analysis",
-    items: ["Python (pandas, NumPy, SciPy)", "SPC", "Molecular dynamics (AMBER/VMD)", "DFT/VASP", "Mathematica"],
+    items: [
+      "Python (pandas, NumPy, SciPy)",
+      "Molecular dynamics (AMBER/VMD)",
+      "DFT/VASP",
+      "Mathematica",
+      "WSxM",
+      "Curve fitting",
+    ],
+  },
+  {
+    group: "Physics & simulation",
+    items: [
+      "Tight-binding modelling",
+      "Green's functions",
+      "Band structure analysis",
+      "XRD and EDS simulation",
+    ],
+  },
+  {
+    group: "Electronics & instrumentation",
+    items: [
+      "Arduino",
+      "LabVIEW",
+      "I–V characterization",
+      "Four-point probe",
+      "Mechanically controlled break junction (MCBJ)",
+    ],
   },
   {
     group: "Software engineering",
-    items: ["Java", "Spring Boot", "Spring WebFlux", "JUnit/Mockito", "React", "Node.js", "Bash"],
+    items: [
+      "Java",
+      "Spring Boot",
+      "Spring WebFlux",
+      "JUnit/Mockito",
+      "React",
+      "Next",
+      "Node.js",
+      "Bash",
+      "LaTeX"
+    ],
   },
   {
     group: "Infrastructure & tools",
-    items: ["Git", "Azure DevOps", "PostgreSQL", "MongoDB", "Redis", "Docker", "CI/CD", "Agile/Scrum"],
+    items: [
+      "Git",
+      "Azure DevOps",
+      "PostgreSQL",
+      "MongoDB",
+      "Redis",
+      "Docker",
+      "CI/CD",
+      "Agile/Scrum",
+    ],
   },
-  {group: "Fabrication", items: ["3D printing", "Laser cutting", "CNC machines", "LaTeX"]},
+  {
+    group: "Fabrication",
+    items: ["3D printing", "Laser cutting", "CNC machines", "Woodturning"],
+  },
   {
     group: "Languages",
-    items: ["Spanish — Native", "English — Professional", "Dutch — A2 (learning)"]
+    items: ["Spanish — Native", "English — Professional", "Dutch — A2 (learning)"],
   },
 ];
 
