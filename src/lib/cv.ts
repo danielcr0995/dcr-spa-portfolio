@@ -55,7 +55,7 @@ export const experience: Experience[] = [
       "Built the website with the MERN stack (MongoDB, Express, React, Node.js)",
       "Custom order management system in Python (pandas, NumPy); DigitalOcean server",
     ],
-    image: "/images/purafruta_logo.png",
+    image: "/images/purafruta_logo.jpg",
     imageAlt: "Placeholder photo for Pura Fruta — replace with a real picture of your work.",
   },
   {
@@ -80,7 +80,7 @@ export const experience: Experience[] = [
       "Provided tutoring and student support",
       "Designed laboratory practices to be performed in a virtual environment",
     ],
-    image: "/images/science_teacher_physics.jpg",
+    image: "/images/science_teacher_physics2.jpg",
     imageAlt: "Placeholder photo for teaching assistant role — replace with a real picture.",
   },
   {
