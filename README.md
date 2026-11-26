@@ -1,36 +1,116 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Daniel Correa — Portfolio
 
-## Getting Started
+Personal portfolio built with Next.js (App Router), TypeScript and CSS Modules. It presents my background in nanoscience research and backend software engineering: work experience, studies, research and software projects, skills, and hobbies.
 
-First, run the development server:
+**Live site:** _add the deployed URL here_
+
+## About
+
+**Daniel Correa** — Erasmus Mundus MSc candidate in Nanoscience and Nanotechnology (KU Leuven · Universitat de Barcelona), with three years of backend engineering experience. Based in Leuven, Belgium.
+
+- Specialization: Nanomedicine and Nanotheranostics
+- Master thesis at IQAC-CSIC: NCAM-derived peptide amphiphile nanocarriers for ocular drug delivery
+- Bachelor in Physics, Yachay Tech University (Ecuador): thesis on basic molecular electronics with a mechanically controlled break junction
+
+## Features
+
+- **Home** with profile summary, key stats, and selected work
+- **Experience** timeline with company, period, and achievements
+- **Studies** pages for the bachelor and master programmes, including thesis cards with abstract and PDF download
+- **Gallery** of projects, filterable by category, sorted by date
+- **Project detail pages** with a hero image, summary, result, full write-up, highlights, step-by-step details, figures with captions, tools, and supervision
+- **Skills**, **hobbies**, and **extras** (courses and certifications)
+- **Contact** section with email and external links
+- Responsive layout, keyboard-accessible navigation, and light/dark theme variables
+
+## Tech stack
+
+- [Next.js](https://nextjs.org/) (App Router, Server and Client Components)
+- [React](https://react.dev/) and [TypeScript](https://www.typescriptlang.org/)
+- CSS Modules, with global design tokens as CSS variables
+- [`next/image`](https://nextjs.org/docs/app/api-reference/components/image) for optimized images
+- [pnpm](https://pnpm.io/) as the package manager
+
+## Getting started
+
+Requirements: Node.js 20 or later and pnpm.
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
+pnpm install
 pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000).
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Scripts
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+| Command | Description |
+| --- | --- |
+| `pnpm dev` | Start the development server |
+| `pnpm build` | Create a production build |
+| `pnpm start` | Serve the production build |
+| `pnpm lint` | Run ESLint |
+| `pnpm clean` | Remove `.next` and `node_modules` |
 
-## Learn More
+## Project structure
 
-To learn more about Next.js, take a look at the following resources:
+```
+src/
+├── app/                      # Routes (App Router)
+│   ├── page.tsx              # Home
+│   ├── layout.tsx            # Root layout, navbar and footer
+│   ├── studies/              # Bachelor and master studies pages
+│   ├── gallery/              # Gallery and [slug] project pages
+│   └── ...
+├── components/
+│   ├── atoms/                # Button and other basic elements
+│   ├── molecules/            # Section, ProjectCard, and similar
+│   └── organisms/            # Navbar, GalleryView, ProjectDetail, ThesisCard, ...
+├── lib/
+│   ├── cv.ts                 # Profile, experience, education, skills, hobbies
+│   ├── definitions.ts        # Shared types (Project, ProjectCategory, ...)
+│   ├── studiesData.ts        # Bachelor programme data
+│   └── masterData.ts         # Master programme data
+└── utils/                    # Helpers (slugify, getSlug, date formatting)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+public/
+├── images/                   # Project, place, and hobby images
+├── pdf/                      # CV and thesis PDFs
+└── cv/                       # Downloadable CV
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Editing the content
 
-## Deploy on Vercel
+Most of the content lives in plain TypeScript data files, so you don't need to touch the components to update the site.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- **Profile, experience, education, skills, hobbies:** `src/lib/cv.ts`
+- **Projects:** the `projects` arrays in `src/lib/`. Each project has a `slug`, a `name`, a `category` list, and optional `details` (full steps), `highlights` (key points), `paragraphs`, `images`, and `tools`.
+- **Thesis pages:** `src/lib/studiesData.ts` and `src/lib/masterData.ts`
+- **Images:** place files in `public/images/` and reference them with a path that starts with `/images/`.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### Adding a project
+
+1. Add an entry to the projects array with a unique `slug`, for example `"my-new-project"`.
+2. Set `category` to one or more values from `PROJECT_CATEGORIES`.
+3. Add an image in `public/images/` and set `image` and `imageAlt`.
+4. Optionally add `highlights`, `details`, `paragraphs`, `images`, and `tools`.
+5. The project appears in the gallery and gets its own page at `/gallery/<slug>`.
+
+The type checker validates each entry, so run `pnpm tsc --noEmit` after editing.
+
+## Accessibility and performance
+
+- Images use descriptive `alt` text, not file names.
+- Navigation and filters are keyboard-accessible, with visible focus states.
+- Project pages are statically generated from `generateStaticParams`, so they load quickly.
+- Motion effects respect `prefers-reduced-motion`.
+
+## Contact
+
+- Email: daniel.correa.1995@gmail.com
+- LinkedIn: [linkedin.com/in/daniel-correa0995](https://linkedin.com/in/daniel-correa0995)
+- GitHub: [github.com/danielcr0995](https://github.com/danielcr0995)
+
+## License
+
+All content, including text, images, and project write-ups, is © Daniel Correa. Code is available for reference; contact me before reusing the content.
