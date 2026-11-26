@@ -16,12 +16,12 @@ export const profile: Profile = {
   tagline:
       "Erasmus Mundus MSc candidate in Nanoscience and Nanotechnology (KU Leuven · Universitat de Barcelona) with 3 years of backend engineering — bridging research-grade nanoscience with robust software.",
   email: "daniel.correa.1995@gmail.com",
-  cvUrl: "/pdf/pdf.pdf",
+  cvUrl: "/pdf/cv.pdf",
   cvFileDownloadName: "DanielCorreaCV.pdf",
   stats: [
     {value: "3", label: "Years backend engineering"},
     {value: "5,000+", label: "Accounts/day enabled"},
-    {value: ">95%", label: "Drug encapsulation efficiency"},
+    {value: "20+", label: "Lab experiments"},
   ],
   links: [
     {label: "LinkedIn", url: "https://linkedin.com/in/daniel-correa0995"},
