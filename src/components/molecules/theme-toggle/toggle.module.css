@@ -1,0 +1,59 @@
+.toggle {
+  display: inline-flex;
+  align-items: center;
+  padding: 0;
+  border: none;
+  background: none;
+  cursor: pointer;
+  border-radius: 9999px;
+}
+
+.toggle:focus-visible {
+  outline: 2px solid var(--primary);
+  outline-offset: 4px;
+}
+
+.track {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  width: 3.5rem;
+  height: 2rem;
+  padding: 0.2rem;
+  border-radius: 9999px;
+  border: 1px solid var(--border);
+  background: var(--secondary);
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.track:hover {
+  border-color: var(--primary);
+}
+
+.knob {
+  display: grid;
+  place-items: center;
+  width: 1.6rem;
+  height: 1.6rem;
+  border-radius: 9999px;
+  background: var(--primary);
+  color: var(--primary-foreground);
+  transform: translateX(0);
+  transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1), background-color 0.3s ease;
+}
+
+.track[data-dark="true"] .knob {
+  transform: translateX(1.5rem);
+}
+
+.knob svg {
+  width: 0.95rem;
+  height: 0.95rem;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .track,
+  .knob {
+    transition: none;
+  }
+}

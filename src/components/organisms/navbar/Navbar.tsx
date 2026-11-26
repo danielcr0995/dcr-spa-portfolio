@@ -1,10 +1,10 @@
 "use client";
 
-import {useEffect, useState} from "react";
 import Link from "next/link";
 import {usePathname} from "next/navigation";
 import styles from "./navbar.module.css";
 import {profile} from "@/lib/cv";
+import {ThemeToggle} from "@/components/molecules/theme-toggle/ThemeToggle";
 
 interface LinkProps {
   id: number;
@@ -80,6 +80,7 @@ export default function Navbar() {
           <a href={`mailto:${profile.email}`} className={styles.contact}>
             Contact
           </a>
+          <ThemeToggle/>
         </div>
       </header>
   );
