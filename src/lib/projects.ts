@@ -377,31 +377,31 @@ export const projects: Project[] = [
         src: "/images/projects/master/nanosensors_gas_sensor_IV_RH_thin_grid.png",
         alt: "Current-voltage curves measured at different relative humidity levels.",
         caption:
-            "Figure 1. I-V curves of the gas sensor at varying relative humidity percentages using MOF IF142."
+            "I-V curves of the gas sensor at varying relative humidity percentages using MOF IF142."
       },
       {
         src: "/images/projects/master/nanosensors_gas_sensor_resistance_RH.png",
         alt: "Experimental resistance measurements and linear fitting as a function of relative humidity.",
         caption:
-            "Figure 2. Change in the resistance as the relative humidity increases."
+            "Change in the resistance as the relative humidity increases."
       },
       {
         src: "/images/projects/master/nanosensors_gas_sensor_IV_before_after.png",
         alt: "Current-voltage curves before and after CO₂ gas pulse exposure.",
         caption:
-            "Figure 3. I-V curves at relative humidity of approximately 2.56% before and after doing the CO₂ gas pulse."
+            "I-V curves at relative humidity of approximately 2.56% before and after doing the CO₂ gas pulse."
       },
       {
         src: "/images/projects/master/nanosensors_gas_sensor_resistance_evol_co2_pulses_rh2.56_temp23.png",
         alt: "Resistance, CO₂ concentration, relative humidity and temperature measurements over time during gas pulse experiments.",
         caption:
-            "Figure 4. CO₂ pulse experiment under low relative humidity conditions."
+            "CO₂ pulse experiment under low relative humidity conditions."
       },
       {
         src: "/images/projects/master/nanosensors_gas_sensor_resistance_evol_co2_pulses_rh22_temp23.png",
         alt: "Resistance, CO₂ concentration, relative humidity and temperature measurements over time under higher humidity conditions.",
         caption:
-            "Figure 5. CO₂ pulse experiment under higher relative humidity conditions."
+            "CO₂ pulse experiment under higher relative humidity conditions."
       }
     ],
     category: ["Research", "Master"],
@@ -471,67 +471,67 @@ export const projects: Project[] = [
         src: "/images/projects/master/modelling_chignolin_chignolin_flat.png",
         alt: "Graphical representation of the chignolin peptide using VMD.",
         caption:
-            "Figure 1. Chignolin molecule representation using VMD."
+            "Chignolin molecule representation using VMD."
       },
       {
         src: "/images/projects/master/modelling_chignolin_chignolin_atoms.png",
         alt: "Graphical representation of the chignolin peptide using VMD showing all atoms.",
         caption:
-            "Figure 2. Chignolin molecule representation using VMD showing all atoms."
+            "Chignolin molecule representation using VMD showing all atoms."
       },
       {
         src: "/images/projects/master/modelling_chignolin_cluster_all_white_image2.png",
         alt: "Visualization of the six structural clusters obtained from the molecular dynamics trajectories.",
         caption:
-            "Figure 3. Chignolin molecule evolution of all the clusters together."
+            "Chignolin molecule evolution of all the clusters together."
       },
       {
         src: "/images/projects/master/modelling_chignolin_cluster0_white_image2.png",
         alt: "Combined visualization of all six structural clusters of chignolin.",
         caption:
-            "Figure 3. Cluster 1: Evolution of chignolin conformations."
+            "Cluster 1: Evolution of chignolin conformations."
       },
       {
         src: "/images/projects/master/modelling_chignolin_cluster1_white_image2.png",
         alt: "Combined visualization of all six structural clusters of chignolin.",
         caption:
-            "Figure 3. Cluster 2: Evolution of chignolin conformations."
+            "Cluster 2: Evolution of chignolin conformations."
       },
       {
         src: "/images/projects/master/modelling_chignolin_cluster2_white_image2.png",
         alt: "Combined visualization of all six structural clusters of chignolin.",
         caption:
-            "Figure 3. Cluster 3: Evolution of chignolin conformations."
+            "Cluster 3: Evolution of chignolin conformations."
       },
       {
         src: "/images/projects/master/modelling_chignolin_cluster3_white_image2.png",
         alt: "Combined visualization of all six structural clusters of chignolin.",
         caption:
-            "Figure 3. Cluster 4: Evolution of chignolin conformations."
+            "Cluster 4: Evolution of chignolin conformations."
       },
       {
         src: "/images/projects/master/modelling_chignolin_cluster4_white_image2.png",
         alt: "Combined visualization of all six structural clusters of chignolin.",
         caption:
-            "Figure 5. Cluster 5: Evolution of chignolin conformations."
+            "Cluster 5: Evolution of chignolin conformations."
       },
       {
         src: "/images/projects/master/modelling_chignolin_cluster5_white_image2.png",
         alt: "Combined visualization of all six structural clusters of chignolin.",
         caption:
-            "Figure 5. Cluster 6: Evolution of chignolin conformations."
+            "Cluster 6: Evolution of chignolin conformations."
       },
       {
         src: "/images/projects/master/modelling_chignolin_chignolin_rmsd.png",
         alt: "RMSD of chignolin as a function of time over the 20 ns molecular dynamics simulation.",
         caption:
-            "Figure 4. Time evolution of the RMSD of chignolin over a 20 ns molecular dynamics simulation."
+            "Time evolution of the RMSD of chignolin over a 20 ns molecular dynamics simulation."
       },
       {
         src: "/images/projects/master/modelling_chignolin_chignolin_rmsd_cluster.png",
         alt: "RMSD values over simulation time, with points colored according to the six structural clusters.",
         caption:
-            "Figure 5. RMSD of chignolin as a function of simulation time, with RMSD frames colored according to structural clusters 1–6."
+            "RMSD of chignolin as a function of simulation time, with RMSD frames colored according to structural clusters 1–6."
       }
       //TODO gif image showing how chignolin molecule folds
     ],
@@ -603,19 +603,19 @@ export const projects: Project[] = [
   //       src: "/images/projects/master/nanosensors_gas_sensor_resistance_evol_co2_pulses_rh22_temp23.png",
   //       alt: "Processed large-area AFM image of the silicon oxide sample.",
   //       caption:
-  //           "Figure 1. Processed AFM image of the silicon oxide sample acquired over a 20 × 20 µm area."
+  //           "Processed AFM image of the silicon oxide sample acquired over a 20 × 20 µm area."
   //     },
   //     {
   //       src: "/images/projects/master/nanosensors_gas_sensor_resistance_evol_co2_pulses_rh22_temp23.png",
   //       alt: "Surface height profile extracted from the processed AFM image.",
   //       caption:
-  //           "Figure 2. Surface height profile obtained from the initial AFM scan."
+  //           "Surface height profile obtained from the initial AFM scan."
   //     },
   //     {
   //       src: "/images/projects/master/nanosensors_gas_sensor_resistance_evol_co2_pulses_rh22_temp23.png",
   //       alt: "High-resolution AFM image of a selected region of the silicon oxide sample.",
   //       caption:
-  //           "Figure 3. Zoomed AFM image showing the selected nanoscale region."
+  //           "Zoomed AFM image showing the selected nanoscale region."
   //     },
   //     {
   //       src: "/images/projects/master/nanosensors_gas_sensor_resistance_evol_co2_pulses_rh22_temp23.png",
@@ -688,37 +688,37 @@ export const projects: Project[] = [
   //       src: "/images/projects/master/nanosensors_gas_sensor_resistance_evol_co2_pulses_rh22_temp23.png",
   //       alt: "Processed AFM topography image of a lipid layer with surface profile and height histogram.",
   //       caption:
-  //           "Figure 1. AFM characterization of a lipid layer, including surface profile and height distribution."
+  //           "AFM characterization of a lipid layer, including surface profile and height distribution."
   //     },
   //     {
   //       src: "/images/projects/master/nanosensors_gas_sensor_resistance_evol_co2_pulses_rh22_temp23.png",
   //       alt: "AFM topography and profile of contact probes.",
   //       caption:
-  //           "Figure 2. Topographical characterization and height analysis of contact probes."
+  //           "Topographical characterization and height analysis of contact probes."
   //     },
   //     {
   //       src: "/images/projects/master/nanosensors_gas_sensor_resistance_evol_co2_pulses_rh22_temp23.png",
   //       alt: "AFM image of a cell showing its surface topography, height profile and substrate anchorage.",
   //       caption:
-  //           "Figure 3. Cell characterization, including height profile, substrate roughness, and cell anchorage."
+  //           "Cell characterization, including height profile, substrate roughness, and cell anchorage."
   //     },
   //     {
   //       src: "/images/projects/master/nanosensors_gas_sensor_resistance_evol_co2_pulses_rh22_temp23.png",
   //       alt: "AFM topography image and height profile of a DNA sample.",
   //       caption:
-  //           "Figure 4. AFM characterization of DNA structures and their measured height."
+  //           "AFM characterization of DNA structures and their measured height."
   //     },
   //     {
   //       src: "/images/projects/master/nanosensors_gas_sensor_resistance_evol_co2_pulses_rh22_temp23.png",
   //       alt: "AFM topography image and three-dimensional representation of nanoparticles.",
   //       caption:
-  //           "Figure 5. Nanoparticle visualization and quantitative particle identification."
+  //           "Nanoparticle visualization and quantitative particle identification."
   //     },
   //     {
   //       src: "/images/projects/master/nanosensors_gas_sensor_resistance_evol_co2_pulses_rh22_temp23.png",
   //       alt: "Force versus indentation graph showing nanoparticle rupture.",
   //       caption:
-  //           "Figure 6. Force–indentation curve used to identify the nanoparticle rupture force."
+  //           "Force–indentation curve used to identify the nanoparticle rupture force."
   //     }
   //   ],
   //   category: ["Research", "Master"],
@@ -786,49 +786,49 @@ export const projects: Project[] = [
         src: "/images/projects/master/characterization_force_spec_silicon_scale_processed.png",
         alt: "Processed AFM topography images of silicon region.",
         caption:
-            "Figure 1. Surface topography of the silicon region."
+            "Surface topography of the silicon region."
       },
       {
         src: "/images/projects/master/characterization_force_spec_pdms_scale_processed.png",
         alt: "Processed AFM topography images of PDMS region.",
         caption:
-            "Figure 1. Surface topography of the PDMS region."
+            "Surface topography of the PDMS region."
       },
       {
         src: "/images/projects/master/characterization_force_spec_force_curve_si_1.jpg",
         alt: "Processed AFM force curves collected on the silicon region.",
         caption:
-            "Figure 2. Force–distance curve obtained from  measurements on silicon."
+            "Force–distance curve obtained from  measurements on silicon."
       },
       {
         src: "/images/projects/master/characterization_force_spec_force_curve_pdms_1.jpg",
         alt: "Processed AFM force curves collected on the PDMS region.",
         caption:
-            "Figure 3. Force–distance curve obtained from measurements on PDMS."
+            "Force–distance curve obtained from measurements on PDMS."
       },
       {
         src: "/images/projects/master/characterization_force_spec_force_curve_si_pdms_forward_3.jpg",
         alt: "Comparison of forward force curves for silicon and PDMS.",
         caption:
-            "Figure 4. Comparison of the mechanical responses of silicon and PDMS during approach."
+            "Comparison of the mechanical responses of silicon and PDMS during approach."
       },
       {
         src: "/images/projects/master/characterization_force_spec_force_curve_si_pdms_backward_3.jpg",
         alt: "Comparison of  backward force curves for silicon and PDMS.",
         caption:
-            "Figure 4. Comparison of the mechanical responses of silicon and PDMS during retraction."
+            "Comparison of the mechanical responses of silicon and PDMS during retraction."
       },
       {
         src: "/images/projects/master/characterization_force_spec_roughness_analysis_silicon.jpg",
         alt: "Surface roughness histograms comparing on silicon.",
         caption:
-            "Figure 5. Roughness distributions of the silicon and PDMS surfaces."
+            "Roughness distributions of the silicon and PDMS surfaces."
       },
       {
         src: "/images/projects/master/characterization_force_spec_roughness_analysis_pdms.jpg",
         alt: "Surface roughness histograms on PDMS.",
         caption:
-            "Figure 5. Roughness distributions of the silicon and PDMS surfaces."
+            "Roughness distributions of the silicon and PDMS surfaces."
       }
     ],
     category: ["Research", "Master"],
@@ -905,19 +905,19 @@ export const projects: Project[] = [
         src: "/images/projects/master/characterization_nanomanipulation_gelatin_zoom_out_hole10.png",
         alt: "AFM topography of a gelatin surface after creating a nanoscale hole, with its corresponding height profile.",
         caption:
-            "Figure 1. AFM-based gelatin removal of the created hole."
+            "AFM-based gelatin removal of the created hole."
       },
       {
         src: "/images/projects/master/characterization_nanomanipulation_gelatin_zoom_out_hole10_profile.jpg",
         alt: "AFM topography of a gelatin surface after creating height profile.",
         caption:
-            "Figure 2. AFM-based gelatin profile of the created hole."
+            "AFM-based gelatin profile of the created hole."
       },
       {
         src: "/images/projects/master/characterization_nanomanipulation_mickey_mouse.png",
         alt: "Mickey Mouse-shaped pattern fabricated on a gelatin substrate using AFM nanomanipulation.",
         caption:
-            "Figure 3. Custom nanoscale Mickey Mouse pattern created through mechanical manipulation."
+            "Custom nanoscale Mickey Mouse pattern created through mechanical manipulation."
       }
     ],
     category: ["Research", "Master"],
@@ -993,31 +993,31 @@ export const projects: Project[] = [
         src: "/images/projects/master/colloids_homeothropic_lc_lc.jpeg",
         alt: "Polarized optical microscopy images of MLC7029 in its homeotropic state.",
         caption:
-            "Figure 1. Optical response of the liquid crystal cell without an electric field and during field-induced director reorientation."
+            "Optical response of the liquid crystal cell without an electric field and during field-induced director reorientation."
       },
       {
         src: "/images/projects/master/colloids_homeothropic_lc_lc_ac_applied.jpeg",
         alt: "Polarized optical microscopy images of MLC7029  under an applied electric field.",
         caption:
-            "Figure 1. Optical response of the liquid crystal cell during field-induced director reorientation."
+            "Optical response of the liquid crystal cell during field-induced director reorientation."
       },
       {
         src: "/images/projects/master/colloids_homeothropic_lc_intensity_vs_voltage.png",
         alt: "Transmitted optical intensity as a function of applied voltage.",
         caption:
-            "Figure 2. Measured transmitted intensity versus applied voltage, showing the onset of the Fredericks transition."
+            "Measured transmitted intensity versus applied voltage, showing the onset of the Fredericks transition."
       },
       {
         src: "/images/projects/master/colloids_homeothropic_lc_phi2_full.png",
         alt: "Squared optical phase as a function of voltage and linear regression near the Fredericks threshold.",
         caption:
-            "Figure 3. Squared optical phase as a function of voltage used to determine the threshold voltage."
+            "Squared optical phase as a function of voltage used to determine the threshold voltage."
       },
       {
         src: "/images/projects/master/colloids_homeothropic_lc_phi2_linear_fit.png",
         alt: "Squared optical phase as a function of voltage and linear regression near the Fredericks threshold.",
         caption:
-            "Figure 3. Linearized optical phase analysis used to determine the threshold voltage."
+            "Linearized optical phase analysis used to determine the threshold voltage."
       }
     ],
     category: ["Research", "Master"],
@@ -1098,19 +1098,19 @@ export const projects: Project[] = [
         src: "/images/projects/master/bionanoeng_beads.png",
         alt: "Schematic representation of colloidal lithography and bead self-assembly at the water-air interface.",
         caption:
-            "Figure 1. Schematic representation of the colloidal lithography fabrication process."
+            "Schematic representation of the colloidal lithography fabrication process."
       },
       {
         src: "/images/projects/master/bionanoeng_G3_02.tif",
         alt: "SEM images of the first silicon sample containing self-assembled polystyrene beads, processed using MATLAB.",
         caption:
-            "Figure 6. SEM characterization and MATLAB-based particle detection of the first sample."
+            "SEM characterization and MATLAB-based particle detection of the first sample."
       },
       {
         src: "/images/projects/master/bionanoeng_G3_03.tif",
         alt: "SEM images of the first silicon sample containing self-assembled polystyrene beads, processed using MATLAB.",
         caption:
-            "Figure 6. SEM characterization and MATLAB-based particle detection of the first sample."
+            "SEM characterization and MATLAB-based particle detection of the first sample."
       },
       {
         src: "/images/projects/master/bionanoeng_Figure_11.png",
@@ -1122,49 +1122,49 @@ export const projects: Project[] = [
         src: "/images/projects/master/bionanoeng_Hist.png",
         alt: "Histogram showing the measured diameter distribution of polystyrene beads.",
         caption:
-            "Figure 7. Statistical distribution of bead diameters obtained through MATLAB image analysis."
+            "Statistical distribution of bead diameters obtained through MATLAB image analysis."
       },
       {
         src: "/images/projects/master/bionanoeng_G3_06.png",
         alt: "SEM images of the second sample showing the negative micropattern of holes after bead removal.",
         caption:
-            "Figure 9. SEM images of the negative pattern created after bead removal."
+            "SEM images of the negative pattern created after bead removal."
       },
       {
         src: "/images/projects/master/bionanoeng_G3_09.tif",
         alt: "SEM images of the second sample showing the negative micropattern of holes after bead removal.",
         caption:
-            "Figure 9. SEM images of the negative pattern created after bead removal."
+            "SEM images of the negative pattern created after bead removal."
       },
       {
         src: "/images/projects/master/bionanoeng_25um_25um_normal.jpg",
         alt: "AFM topography image of the silicon substrate after removal of the polystyrene beads.",
         caption:
-            "Figure 11. AFM characterization of the patterned surface over a 25 × 25 µm area."
+            "AFM characterization of the patterned surface over a 25 × 25 µm area."
       },
       {
         src: "/images/projects/master/bionanoeng_25um_25um_image_profile2.jpg",
         alt: "AFM cross-sectional profile showing the dimensions of holes left after bead removal.",
         caption:
-            "Figure 15. Cross-sectional AFM profile used to measure the hole diameter and deposited gold layer."
+            "Cross-sectional AFM profile used to measure the hole diameter and deposited gold layer."
       },
       {
         src: "/images/projects/master/bionanoeng_25_25um_profile_2.jpg",
         alt: "AFM topography image of the silicon substrate after removal of the polystyrene beads.",
         caption:
-            "Figure 11. Profile analysis of the holes left by the beads."
+            "Profile analysis of the holes left by the beads."
       },
       {
         src: "/images/projects/master/bionanoeng_25um_25um_histogram.jpg",
         alt: "AFM surface roughness histogram of the gold-coated silicon substrate.",
         caption:
-            "Figure 13. Surface roughness analysis used to estimate the gold layer thickness."
+            "Surface roughness analysis used to estimate the gold layer thickness."
       },
       {
         src: "/images/projects/master/bionanoeng_25um_25um_image3D.jpg",
         alt: "Three-dimensional AFM visualization of the patterned silicon surface showing holes and gold deposition roughness.",
         caption:
-            "Figure 16. Three-dimensional AFM visualization of the fabricated micropattern."
+            "Three-dimensional AFM visualization of the fabricated micropattern."
       }
     ],
     category: ["Research", "Master"],
@@ -1250,19 +1250,19 @@ export const projects: Project[] = [
         src: "/images/projects/master/nanosensors_photogenerated_current_photgenerated_current_vs_voltage.png",
         alt: "Current-voltage characteristics of a ZnO nanowire photodetector under illumination at 340 nm and 385 nm at different photon fluxes.",
         caption:
-            "Figure 1. Current-voltage characteristics under different ultraviolet illumination conditions."
+            "Current-voltage characteristics under different ultraviolet illumination conditions."
       },
       {
         src: "/images/projects/master/nanosensors_photogenerated_current_photgenerated_current_vs_voltage_dark_current_substracted.png",
         alt: "Photogenerated current as a function of applied voltage for the two illumination wavelengths.",
         caption:
-            "Figure 2. Photogenerated current after subtraction of the dark current contribution."
+            "Photogenerated current after subtraction of the dark current contribution."
       },
       {
         src: "/images/projects/master/nanosensors_photogenerated_current_phtocflux.png",
         alt: "Photogenerated current as a function of photon flux at a fixed applied voltage of 1 V.",
         caption:
-            "Figure 3. Relationship between photon flux and photogenerated current at 1 V."
+            "Relationship between photon flux and photogenerated current at 1 V."
       }
     ],
     category: ["Research", "Master"],
@@ -1336,43 +1336,43 @@ export const projects: Project[] = [
         src: "/images/projects/master/nanosensors_characterization_light_temp_hum_sensorexperimental_setup.jpg",
         alt: "Experimental setup showing the CdS photoresistor connected to an Arduino UNO and positioned at controlled distances from an LED light source.",
         caption:
-            "Figure 1. Experimental setup for static and dynamic light sensor characterization."
+            "Experimental setup for static and dynamic light sensor characterization."
       },
       {
         src: "/images/projects/master/nanosensors_characterization_light_temp_hum_sensorlight_calibration_linear.png",
         alt: "Calibration curve of the CdS light sensor in its approximately 20–40 cm linear operating region.",
         caption:
-            "Figure 3. Linear calibration region used to determine the sensitivity of the CdS photoresistor."
+            "Linear calibration region used to determine the sensitivity of the CdS photoresistor."
       },
       {
         src: "/images/projects/master/nanosensors_characterization_light_temp_hum_sensorlight_dynamic_on.png",
         alt: "Dynamic response of the CdS photoresistor during a dark-to-light transition.",
         caption:
-            "Figure 4. Light sensor response and rise time during illumination."
+            "Light sensor response and rise time during illumination."
       },
       {
         src: "/images/projects/master/nanosensors_characterization_light_temp_hum_sensorlight_dynamic_off.png",
         alt: "Dynamic response of the CdS photoresistor during a light-to-dark transition.",
         caption:
-            "Figure 5. Light sensor recovery response after illumination is removed."
+            "Light sensor recovery response after illumination is removed."
       },
       {
         src: "/images/projects/master/nanosensors_characterization_light_temp_hum_sensortemperature_calibration.png",
         alt: "DHT20 temperature calibration curve comparing corrected sensor measurements with reference thermometer measurements.",
         caption:
-            "Figure 6. Static calibration of the DHT20 temperature sensor."
+            "Static calibration of the DHT20 temperature sensor."
       },
       {
         src: "/images/projects/master/nanosensors_characterization_light_temp_hum_sensortemperature_dynamic.png",
         alt: "Temperature sensor response during controlled heating and cooling.",
         caption:
-            "Figure 7. Dynamic temperature response illustrating thermal inertia."
+            "Dynamic temperature response illustrating thermal inertia."
       },
       {
         src: "/images/projects/master/nanosensors_characterization_light_temp_hum_sensorhumidity_dynamic.png",
         alt: "Dynamic response of the DHT20 humidity sensor during increasing and decreasing relative humidity.",
         caption:
-            "Figure 8. Humidity sensor response during moisture changes."
+            "Humidity sensor response during moisture changes."
       }
     ],
     category: ["Research", "Master"],
@@ -1468,13 +1468,13 @@ export const projects: Project[] = [
         src: "/images/projects/master/nanosensors_temperature_sensor_calibration_fit.png",
         alt: "Pt-100 resistance measurements as a function of micro-heater voltage with fitted calibration model.",
         caption:
-            "Figure 1. Pt-100 resistance calibration using controlled micro-heater voltage steps."
+            "Pt-100 resistance calibration using controlled micro-heater voltage steps."
       },
       {
         src: "/images/projects/master/nanosensors_temperature_sensor_calibration_resistance_temperature.png",
         alt: "Experimental resistance versus temperature measurements for the Ni-HHTP-based resistive sensor, with exponential fitting.",
         caption:
-            "Figure 2. Temperature-dependent electrical resistance of the Ni-HHTP sensing material."
+            "Temperature-dependent electrical resistance of the Ni-HHTP sensing material."
       }
     ],
     category: ["Research", "Master"],
@@ -1564,37 +1564,37 @@ export const projects: Project[] = [
         src: "/images/projects/master/thesis_nanosystems_pa_schema_pa.png",
         alt: "Molecular structures of the four synthesized NCAM-derived peptide amphiphile formulations with different numbers of stearic acid chains.",
         caption:
-            "Figure 1. Molecular design of the four synthesized peptide amphiphile formulations."
+            "Molecular design of the four synthesized peptide amphiphile formulations."
       },
       {
         src: "/images/projects/master/thesis_nanosystems_pa_z_ms_ncam_c18.jpg",
         alt: "Electrospray ionization mass spectrometry analysis of the four-stearic-acid NCAM-derived peptide amphiphile.",
         caption:
-            "Figure 2. Mass spectrometry confirmation of the synthesized peptide amphiphile."
+            "Mass spectrometry confirmation of the synthesized peptide amphiphile."
       },
       {
         src: "/images/projects/master/thesis_nanosystems_pa_circular_dichroism_comparison_100uM.png",
         alt: "Circular dichroism spectra of the four synthesized peptide amphiphiles at 100 micromolar concentration.",
         caption:
-            "Figure 3. Secondary structure characterization using circular dichroism spectroscopy."
+            "Secondary structure characterization using circular dichroism spectroscopy."
       },
       {
         src: "/images/projects/master/thesis_nanosystems_pa_circular_dichroism_comparison_100uM_25uM.png",
         alt: "Circular dichroism spectra of the four synthesized peptide amphiphiles comparing CAC at 100 and 25 micromolar concentration.",
         caption:
-            "Figure 3. Comparison of secondary structure characterization using circular dichroism spectroscopy at 100 and 25 micromolar concentration.."
+            "Comparison of secondary structure characterization using circular dichroism spectroscopy at 100 and 25 micromolar concentration.."
       },
       {
         src: "/images/projects/master/thesis_nanosystems_pa_fl_cac_ncam_c18_normalized.png",
         alt: "Thioflavin T fluorescence analysis of RR-NCAM with two stearic acid chains showing a critical aggregation concentration of 7.8 micromolar.",
         caption:
-            "Figure 4. Fluorescence-based determination of the critical aggregation concentration."
+            "Fluorescence-based determination of the critical aggregation concentration."
       },
       {
         src: "/images/projects/master/thesis_nanosystems_pa_calibration_curve_latanoprost.png",
         alt: "Latanoprost calibration curve based on HPLC peak area and drug concentration.",
         caption:
-            "Figure 5. HPLC calibration curve used for latanoprost quantification."
+            "HPLC calibration curve used for latanoprost quantification."
       }
     ],
     category: ["Research", "Master", "Thesis"],
