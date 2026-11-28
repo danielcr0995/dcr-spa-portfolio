@@ -1131,7 +1131,7 @@ export const projects: Project[] = [
             "SEM images of the negative pattern created after bead removal."
       },
       {
-        src: "/images/projects/master/bionanoeng_G3_09.tif",
+        src: "/images/projects/master/bionanoeng_G3_09.png",
         alt: "SEM images of the second sample showing the negative micropattern of holes after bead removal.",
         caption:
             "SEM images of the negative pattern created after bead removal."
