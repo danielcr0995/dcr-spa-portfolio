@@ -1101,16 +1101,16 @@ export const projects: Project[] = [
             "Schematic representation of the colloidal lithography fabrication process."
       },
       {
-        src: "/images/projects/master/bionanoeng_G3_02.tif",
+        src: "/images/projects/master/bionanoeng_G3_02.png",
         alt: "SEM images of the first silicon sample containing self-assembled polystyrene beads, processed using MATLAB.",
         caption:
-            "SEM characterization and MATLAB-based particle detection of the first sample."
+            "SEM characterization particle detection of the first sample."
       },
       {
-        src: "/images/projects/master/bionanoeng_G3_03.tif",
+        src: "/images/projects/master/bionanoeng_G3_03.png",
         alt: "SEM images of the first silicon sample containing self-assembled polystyrene beads, processed using MATLAB.",
         caption:
-            "SEM characterization and MATLAB-based particle detection of the first sample."
+            "SEM characterization particle detection of the first sample."
       },
       {
         src: "/images/projects/master/bionanoeng_Figure_11.png",
