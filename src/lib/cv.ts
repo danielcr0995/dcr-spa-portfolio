@@ -30,6 +30,22 @@ export const profile: Profile = {
 
 export const experience: Experience[] = [
   {
+    title: "Master's Thesis Researcher",
+    company: "IQAC-CSIC, Universitat de Barcelona — Barcelona, Spain",
+    period: "Feb 2025 — Aug 2026",
+    summary:
+        "Designed and characterized NCAM-derived peptide amphiphile nanocarriers for ocular drug delivery in glaucoma treatment.",
+    points: [
+      "Synthesized four peptide amphiphiles by manual Fmoc solid-phase peptide synthesis",
+      "Verified chemical identity by UHPLC/ESI-MS and secondary structure by circular dichroism",
+      "Found critical aggregation concentrations from 7.6 to 19.7 µM; two stearic acid chains lowered it",
+      "Reached 97.8–98.7% latanoprost encapsulation efficiency in three formulations",
+    ],
+    image: "/images/projects/master/cover_ncam_peptide_amphiphile_nanocarriers.png",
+    imageAlt:
+        "Scientific illustration of NCAM-derived peptide amphiphile nanocarriers encapsulating latanoprost",
+  },
+  {
     title: "Production Systems Engineer",
     company: "Banco Pichincha — Quito, Ecuador",
     period: "May 2022 — Sept 2024",

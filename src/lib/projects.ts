@@ -1672,7 +1672,7 @@ export const projects: Project[] = [
       "Linear Regression",
       "Encapsulation Efficiency Analysis"
     ],
-    institution: "KU Leuven",
+    institution: "IQAC-CSIC, Universitat de Barcelona, KU Leuven",
     degree:
         "Erasmus Mundus Master of Science in Nanoscience and Nanotechnology – Nanomedicine and Nanotheranostics",
     date: new Date(2026, 8, 1),
